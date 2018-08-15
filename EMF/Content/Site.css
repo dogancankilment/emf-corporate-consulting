@@ -1,0 +1,217 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    margin-top: 45px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+.button.button-3d:hover {
+    background-color:darkred !important;
+}
+
+.button.button-3d {
+    background-color:darkred !important;
+}
+
+.image_fade {
+    border: 1px solid; 
+    width:200px; 
+    height:auto;
+    margin:10px;
+}
+
+blockquote {
+    padding-top: 40px;
+}
+
+blockquote p{
+
+    font-family: sans-serif; 
+    line-height: 30px;
+    font-size: 15px;
+}
+
+/*@media (min-width: 1200px) {
+    #page-title.page-title-parallax1 {
+        max-width: 1170px;
+    }
+}
+@media (min-width: 992px) {
+    #page-title.page-title-parallax1 {
+            max-width: 970px;
+    }
+}
+@media (min-width: 768px) {
+    #page-title.page-title-parallax1 {
+            max-width: 750px;
+    }
+}
+@media (max-width: 767px) and (min-width: 480px) {
+    #page-title.page-title-parallax1 {
+        width: 470px !important;
+    }
+}
+@media (min-width: 479px) {
+    #page-title.page-title-parallax1 {
+            width: 310px !important;
+    }
+}*/
+
+#page-title.page-title-parallax1 {
+    background-position: 0% 0px;
+    background-size: cover;
+    background-image: url('images/background2.png');
+    height: 400px;
+}
+
+#page-title.page-title-parallax2 {
+    background-position: 0% 0px;
+    background-size: cover;
+    background-image: url('images/background4.png');
+    height: 400px;
+}
+
+#page-title.page-title-parallax3 {
+    background-position: 0% 0px;
+    background-size: cover;
+    background-image: url('images/background3.png');
+    height: 400px;
+}
+
+#page-title.page-title-parallax5 {
+    background-position: 0% 0px;
+    background-size: cover;
+    background-image: url('images/background5.png');
+    height: 400px;
+}
+
+.btn-group > .btn {
+    background-color:#bf272d; 
+    margin-right:150px;
+    border:1px solid #e4e4e4; 
+    border-radius:5px;
+    width: 256px;
+    height: 70px;
+    padding-top: 24px; 
+    color:#ffffff
+}
+
+.btn-group{
+    padding-top: 52px;
+    margin-left: 145px; 
+    padding-bottom: 50px;
+}
+
+@media (max-width: 991px){
+    .container-fullwidth {
+        width:100% !important;
+    }
+}
+
+.address {
+    list-style-type:none !important;
+}
+
+.center {
+    margin-top: 35px !important;
+    /*margin-left: 280px;*/
+    font-size:12px !important;
+}
+hr {
+    color:darkred !important;
+}
+
+h1{
+    font-size:22px !important;
+}
+
+#copyrights a {
+    background-color: grey !important;
+    border-radius: 13px !important;
+}
+
+#footer .footer-widgets-wrap{
+    padding-bottom: 10px !important;
+}
+
+h4{
+    color:red !important;
+    text-align:center;
+}
+
+form{
+    margin-bottom:0px !important;
+}
+
+figcaption a {
+    color:darkred !important;
+}
+
+.carousel-indicators li {
+    background-color: grey !important;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom:-77px !important;
+    }
+}
+
+::selection{
+    background:lightblue !important;
+}
+
+#primary-menu ul > li {
+    margin-left:50px !important;
+
+}
+.dark .widget_links li a{
+    color:black !important;
+}
+
+.widget:first-child{
+    color:black !important;
+}
+
+
+
+#primary-menu.style-2 > div > ul > li > a:hover{
+    color:black !important;
+}
+
+#primary-menu ul > li :hover{
+    color:black !important;
+}
+
+.col_one_fourth{
+    width:20% !important;
+}
+
+.owl-carousel .owl-item img {
+    width:250px; 
+    height:250px; 
+    margin-left:200px;
+}

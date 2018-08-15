@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E699A574-62EC-43D4-A19C-39370C5380AE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMF</RootNamespace>
+    <AssemblyName>EMF</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hakkimizda.aspx" />
+    <Content Include="Bayilerimiz.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\bootstrap-rtl.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\calendar.css" />
+    <Content Include="Content\css\camera-rtl.css" />
+    <Content Include="Content\css\camera.css" />
+    <Content Include="Content\css\colors-rtl.css" />
+    <Content Include="Content\css\colors.css" />
+    <Content Include="Content\css\components\bs-datatable.css" />
+    <Content Include="Content\css\components\bs-editable.css" />
+    <Content Include="Content\css\components\bs-filestyle.css" />
+    <Content Include="Content\css\components\bs-rating.css" />
+    <Content Include="Content\css\components\bs-select.css" />
+    <Content Include="Content\css\components\bs-switches.css" />
+    <Content Include="Content\css\components\dark-components.css" />
+    <Content Include="Content\css\components\daterangepicker.css" />
+    <Content Include="Content\css\components\ion.rangeslider.css" />
+    <Content Include="Content\css\components\pricing-table.css" />
+    <Content Include="Content\css\components\radio-checkbox.css" />
+    <Content Include="Content\css\components\rangeslider\sprite-skin-nice.png" />
+    <Content Include="Content\css\components\select-boxes.css" />
+    <Content Include="Content\css\components\timepicker.css" />
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\dark-rtl.css" />
+    <Content Include="Content\css\dark.css" />
+    <Content Include="Content\css\elastic.css" />
+    <Content Include="Content\css\font-icons-rtl.css" />
+    <Content Include="Content\css\font-icons-snapchat.css" />
+    <Content Include="Content\css\font-icons.css" />
+    <Content Include="Content\css\fonts.css" />
+    <Content Include="Content\css\fonts\font-icons-snapchat.svg" />
+    <Content Include="Content\css\fonts\font-icons.svg" />
+    <Content Include="Content\css\fonts\lined-icons.svg" />
+    <Content Include="Content\css\fonts\Simple-Line-Icons.dev.svg" />
+    <Content Include="Content\css\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Content\css\imports\blog.css" />
+    <Content Include="Content\css\imports\content.css" />
+    <Content Include="Content\css\imports\events.css" />
+    <Content Include="Content\css\imports\extras.css" />
+    <Content Include="Content\css\imports\footer.css" />
+    <Content Include="Content\css\imports\header.css" />
+    <Content Include="Content\css\imports\helpers.css" />
+    <Content Include="Content\css\imports\layouts.css" />
+    <Content Include="Content\css\imports\pagetitle.css" />
+    <Content Include="Content\css\imports\portfolio.css" />
+    <Content Include="Content\css\imports\shop.css" />
+    <Content Include="Content\css\imports\shortcodes.css" />
+    <Content Include="Content\css\imports\shortcodes\alerts.css" />
+    <Content Include="Content\css\imports\shortcodes\buttons.css" />
+    <Content Include="Content\css\imports\shortcodes\carousel.css" />
+    <Content Include="Content\css\imports\shortcodes\clients.css" />
+    <Content Include="Content\css\imports\shortcodes\countdown.css" />
+    <Content Include="Content\css\imports\shortcodes\counter-skills.css" />
+    <Content Include="Content\css\imports\shortcodes\dividers.css" />
+    <Content Include="Content\css\imports\shortcodes\faqs.css" />
+    <Content Include="Content\css\imports\shortcodes\feature-box.css" />
+    <Content Include="Content\css\imports\shortcodes\headings.css" />
+    <Content Include="Content\css\imports\shortcodes\misc.css" />
+    <Content Include="Content\css\imports\shortcodes\overlay.css" />
+    <Content Include="Content\css\imports\shortcodes\pricing.css" />
+    <Content Include="Content\css\imports\shortcodes\process-steps.css" />
+    <Content Include="Content\css\imports\shortcodes\promo.css" />
+    <Content Include="Content\css\imports\shortcodes\social-icons.css" />
+    <Content Include="Content\css\imports\shortcodes\styled-icons.css" />
+    <Content Include="Content\css\imports\shortcodes\tabs.css" />
+    <Content Include="Content\css\imports\shortcodes\team.css" />
+    <Content Include="Content\css\imports\shortcodes\testimonials.css" />
+    <Content Include="Content\css\imports\shortcodes\toggles-accordions.css" />
+    <Content Include="Content\css\imports\shortcodes\youtubebg.css" />
+    <Content Include="Content\css\imports\sliders.css" />
+    <Content Include="Content\css\imports\topbar.css" />
+    <Content Include="Content\css\imports\typography.css" />
+    <Content Include="Content\css\imports\widgets.css" />
+    <Content Include="Content\css\intro-fonts.css" />
+    <Content Include="Content\css\magnific-popup.css" />
+    <Content Include="Content\css\nivo-slider.css" />
+    <Content Include="Content\css\responsive-rtl.css" />
+    <Content Include="Content\css\responsive.css" />
+    <Content Include="Content\css\swiper.css" />
+    <Content Include="Content\css\vmap.css" />
+    <Content Include="Content\emf_1.png" />
+    <Content Include="Content\images\background1.png" />
+    <Content Include="Content\images\background2.png" />
+    <Content Include="Content\images\background3.png" />
+    <Content Include="Content\images\background4.png" />
+    <Content Include="Content\images\background5.png" />
+    <Content Include="Content\images\blank.svg" />
+    <Content Include="Content\images\camera_skins.png" />
+    <Content Include="Content\images\copy.jpeg" />
+    <Content Include="Content\images\EMF CE-1.png" />
+    <Content Include="Content\images\EMF FREN RESİMLERİ 001.jpg" />
+    <Content Include="Content\images\EMF FREN RESİMLERİ 002.jpg" />
+    <Content Include="Content\images\EMF FREN RESİMLERİ 003.jpg" />
+    <Content Include="Content\images\EMF FREN RESİMLERİ 004.jpg" />
+    <Content Include="Content\images\EMF FREN RESİMLERİ 005.jpg" />
+    <Content Include="Content\images\EMF FREN RESİMLERİ 006.jpg" />
+    <Content Include="Content\images\EMF FREN RESİMLERİ 007.jpg" />
+    <Content Include="Content\images\EMF FREN RESİMLERİ 008.jpg" />
+    <Content Include="Content\images\EMF FREN RESİMLERİ 009.jpg" />
+    <Content Include="Content\images\EMF İMALAT YETERLİLİK BELGESİ.jpg" />
+    <Content Include="Content\images\envelope.jpeg" />
+    <Content Include="Content\images\FAYDALI MODEL BELGESİ-1.png" />
+    <Content Include="Content\images\footer-bg.jpg" />
+    <Content Include="Content\images\footer-logo%402x.png" />
+    <Content Include="Content\images\footer-logo.png" />
+    <Content Include="Content\images\footer-widget-logo%402x.png" />
+    <Content Include="Content\images\footer-widget-logo.png" />
+    <Content Include="Content\images\footer.jpeg" />
+    <Content Include="Content\images\grid.png" />
+    <Content Include="Content\images\hakkimizda.jpeg" />
+    <Content Include="Content\images\header.jpeg" />
+    <Content Include="Content\images\ISO 14001 - 2018-1.jpg" />
+    <Content Include="Content\images\ISO 9001 - 2018-1.jpg" />
+    <Content Include="Content\images\pattern.png" />
+    <Content Include="Content\images\pattern2.png" />
+    <Content Include="Content\images\phone.jpeg" />
+    <Content Include="Content\images\preloader%402x.gif" />
+    <Content Include="Content\images\preloader-dark%402x.gif" />
+    <Content Include="Content\images\preloader-dark.gif" />
+    <Content Include="Content\images\preloader.gif" />
+    <Content Include="Content\images\slider1.jpeg" />
+    <Content Include="Content\images\slider2.jpeg" />
+    <Content Include="Content\images\slider3.jpeg" />
+    <Content Include="Content\images\urun1.jpeg" />
+    <Content Include="Content\images\urun2.jpeg" />
+    <Content Include="Content\images\urun3.jpeg" />
+    <Content Include="Content\images\urun4.jpeg" />
+    <Content Include="Content\images\urun5.png" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 010.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 011.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 012.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 013.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 014.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 015.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 016.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 017.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 018.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 019.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 020.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 021.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 022.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 023.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 024.jpg" />
+    <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 025.jpg" />
+    <Content Include="Content\images\urunP1.JPG" />
+    <Content Include="Content\images\urunP2.JPG" />
+    <Content Include="Content\images\urunP3.JPG" />
+    <Content Include="Content\images\urunP4.JPG" />
+    <Content Include="Content\images\urunP5.JPG" />
+    <Content Include="Content\images\world-map.png" />
+    <Content Include="Content\images\youtube.jpeg" />
+    <Content Include="Content\images\y_arkaplan.jpeg" />
+    <Content Include="Content\js\chart-utils.js" />
+    <Content Include="Content\js\chart.js" />
+    <Content Include="Content\js\components\bs-datatable.js" />
+    <Content Include="Content\js\components\bs-editable.js" />
+    <Content Include="Content\js\components\bs-filestyle.js" />
+    <Content Include="Content\js\components\bs-select.js" />
+    <Content Include="Content\js\components\bs-switches.js" />
+    <Content Include="Content\js\components\daterangepicker.js" />
+    <Content Include="Content\js\components\moment.js" />
+    <Content Include="Content\js\components\rangeslider.min.js" />
+    <Content Include="Content\js\components\responsive-tabs.js" />
+    <Content Include="Content\js\components\select-boxes.js" />
+    <Content Include="Content\js\components\selectsplitter.js" />
+    <Content Include="Content\js\components\star-rating.js" />
+    <Content Include="Content\js\components\timepicker.js" />
+    <Content Include="Content\js\components\typehead.js" />
+    <Content Include="Content\js\events-data.js" />
+    <Content Include="Content\js\functions.js" />
+    <Content Include="Content\js\jquery.calendario.js" />
+    <Content Include="Content\js\jquery.camera.js" />
+    <Content Include="Content\js\jquery.elastic.js" />
+    <Content Include="Content\js\jquery.gmap.js" />
+    <Content Include="Content\js\jquery.js" />
+    <Content Include="Content\js\jquery.mousewheel.min.js" />
+    <Content Include="Content\js\jquery.nivo.js" />
+    <Content Include="Content\js\jquery.vmap.js" />
+    <Content Include="Content\js\plugins-dynamic.js" />
+    <Content Include="Content\js\plugins.js" />
+    <Content Include="Content\js\plugins\jquery.bootstrap.js" />
+    <Content Include="Content\js\plugins\jquery.chart.js" />
+    <Content Include="Content\js\plugins\jquery.color.js" />
+    <Content Include="Content\js\plugins\jquery.cookie.js" />
+    <Content Include="Content\js\plugins\jquery.countdown.js" />
+    <Content Include="Content\js\plugins\jquery.countto.js" />
+    <Content Include="Content\js\plugins\jquery.dribbble.js" />
+    <Content Include="Content\js\plugins\jquery.fitvids.js" />
+    <Content Include="Content\js\plugins\jquery.flexslider.js" />
+    <Content Include="Content\js\plugins\jquery.flickrfeed.js" />
+    <Content Include="Content\js\plugins\jquery.form.js" />
+    <Content Include="Content\js\plugins\jquery.important.js" />
+    <Content Include="Content\js\plugins\jquery.infinitescroll.js" />
+    <Content Include="Content\js\plugins\jquery.instagram.js" />
+    <Content Include="Content\js\plugins\jquery.isotope.js" />
+    <Content Include="Content\js\plugins\jquery.magnific.js" />
+    <Content Include="Content\js\plugins\jquery.owlcarousel.js" />
+    <Content Include="Content\js\plugins\jquery.pagetransition.js" />
+    <Content Include="Content\js\plugins\jquery.paginate.js" />
+    <Content Include="Content\js\plugins\jquery.parallax.js" />
+    <Content Include="Content\js\plugins\jquery.piechart.js" />
+    <Content Include="Content\js\plugins\jquery.superfish.js" />
+    <Content Include="Content\js\plugins\jquery.swiper.js" />
+    <Content Include="Content\js\plugins\jquery.tabs.js" />
+    <Content Include="Content\js\plugins\jquery.textrotator.js" />
+    <Content Include="Content\js\plugins\jquery.toastr.js" />
+    <Content Include="Content\js\plugins\jquery.twitterfeed.js" />
+    <Content Include="Content\js\plugins\jquery.validation.js" />
+    <Content Include="Content\js\plugins\jquery.youtube.js" />
+    <Content Include="Content\js\vmap\continents\jquery.vmap.africa.js" />
+    <Content Include="Content\js\vmap\continents\jquery.vmap.asia.js" />
+    <Content Include="Content\js\vmap\continents\jquery.vmap.australia.js" />
+    <Content Include="Content\js\vmap\continents\jquery.vmap.europe.js" />
+    <Content Include="Content\js\vmap\continents\jquery.vmap.north-america.js" />
+    <Content Include="Content\js\vmap\continents\jquery.vmap.south-america.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.algeria.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.argentina.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.brazil.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.canada.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.europe.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.france.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.germany.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.greece.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.iran.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.iraq.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.russia.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.sampledata.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.tunisia.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.turkey.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.usa.js" />
+    <Content Include="Content\js\vmap\jquery.vmap.world.js" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\style-import.css" />
+    <Content Include="Content\style-rtl.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\css\colors-rtl.php" />
+    <Content Include="Content\css\colors.php" />
+    <Content Include="Content\css\fonts\font-icons-snapchat.eot" />
+    <Content Include="Content\css\fonts\font-icons-snapchat.ttf" />
+    <Content Include="Content\css\fonts\font-icons-snapchat.woff" />
+    <Content Include="Content\css\fonts\font-icons.eot" />
+    <Content Include="Content\css\fonts\font-icons.ttf" />
+    <Content Include="Content\css\fonts\font-icons.woff" />
+    <Content Include="Content\css\fonts\lined-icons.eot" />
+    <Content Include="Content\css\fonts\lined-icons.ttf" />
+    <Content Include="Content\css\fonts\lined-icons.woff" />
+    <Content Include="Content\css\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Content\css\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Content\css\fonts\Simple-Line-Icons.woff" />
+    <Content Include="Content\less\blog.less" />
+    <Content Include="Content\less\content.less" />
+    <Content Include="Content\less\dark.less" />
+    <Content Include="Content\less\events.less" />
+    <Content Include="Content\less\extras.less" />
+    <Content Include="Content\less\footer.less" />
+    <Content Include="Content\less\header.less" />
+    <Content Include="Content\less\helpers.less" />
+    <Content Include="Content\less\layouts.less" />
+    <Content Include="Content\less\mixins.less" />
+    <Content Include="Content\less\pagetitle.less" />
+    <Content Include="Content\less\portfolio.less" />
+    <Content Include="Content\less\responsive.less" />
+    <Content Include="Content\less\shop.less" />
+    <Content Include="Content\less\shortcodes.less" />
+    <Content Include="Content\less\shortcodes\alerts.less" />
+    <Content Include="Content\less\shortcodes\buttons.less" />
+    <Content Include="Content\less\shortcodes\carousel.less" />
+    <Content Include="Content\less\shortcodes\clients.less" />
+    <Content Include="Content\less\shortcodes\countdown.less" />
+    <Content Include="Content\less\shortcodes\counter-skills.less" />
+    <Content Include="Content\less\shortcodes\dividers.less" />
+    <Content Include="Content\less\shortcodes\faqs.less" />
+    <Content Include="Content\less\shortcodes\feature-box.less" />
+    <Content Include="Content\less\shortcodes\headings.less" />
+    <Content Include="Content\less\shortcodes\misc.less" />
+    <Content Include="Content\less\shortcodes\overlay.less" />
+    <Content Include="Content\less\shortcodes\pricing.less" />
+    <Content Include="Content\less\shortcodes\process-steps.less" />
+    <Content Include="Content\less\shortcodes\promo.less" />
+    <Content Include="Content\less\shortcodes\social-icons.less" />
+    <Content Include="Content\less\shortcodes\styled-icons.less" />
+    <Content Include="Content\less\shortcodes\tabs.less" />
+    <Content Include="Content\less\shortcodes\team.less" />
+    <Content Include="Content\less\shortcodes\testimonials.less" />
+    <Content Include="Content\less\shortcodes\toggles-accordions.less" />
+    <Content Include="Content\less\shortcodes\youtubebg.less" />
+    <Content Include="Content\less\sliders.less" />
+    <Content Include="Content\less\topbar.less" />
+    <Content Include="Content\less\typography.less" />
+    <Content Include="Content\less\variables.less" />
+    <Content Include="Content\less\widgets.less" />
+    <Content Include="Content\sass\blog.scss" />
+    <Content Include="Content\sass\content.scss" />
+    <Content Include="Content\sass\dark.scss" />
+    <Content Include="Content\sass\events.scss" />
+    <Content Include="Content\sass\extras.scss" />
+    <Content Include="Content\sass\footer.scss" />
+    <Content Include="Content\sass\header.scss" />
+    <Content Include="Content\sass\helpers.scss" />
+    <Content Include="Content\sass\layouts.scss" />
+    <Content Include="Content\sass\mixins.scss" />
+    <Content Include="Content\sass\pagetitle.scss" />
+    <Content Include="Content\sass\portfolio.scss" />
+    <Content Include="Content\sass\responsive.scss" />
+    <Content Include="Content\sass\shop.scss" />
+    <Content Include="Content\sass\shortcodes.scss" />
+    <Content Include="Content\sass\shortcodes\alerts.scss" />
+    <Content Include="Content\sass\shortcodes\buttons.scss" />
+    <Content Include="Content\sass\shortcodes\carousel.scss" />
+    <Content Include="Content\sass\shortcodes\clients.scss" />
+    <Content Include="Content\sass\shortcodes\countdown.scss" />
+    <Content Include="Content\sass\shortcodes\counter-skills.scss" />
+    <Content Include="Content\sass\shortcodes\dividers.scss" />
+    <Content Include="Content\sass\shortcodes\faqs.scss" />
+    <Content Include="Content\sass\shortcodes\feature-box.scss" />
+    <Content Include="Content\sass\shortcodes\headings.scss" />
+    <Content Include="Content\sass\shortcodes\misc.scss" />
+    <Content Include="Content\sass\shortcodes\overlay.scss" />
+    <Content Include="Content\sass\shortcodes\pricing.scss" />
+    <Content Include="Content\sass\shortcodes\process-steps.scss" />
+    <Content Include="Content\sass\shortcodes\promo.scss" />
+    <Content Include="Content\sass\shortcodes\social-icons.scss" />
+    <Content Include="Content\sass\shortcodes\styled-icons.scss" />
+    <Content Include="Content\sass\shortcodes\tabs.scss" />
+    <Content Include="Content\sass\shortcodes\team.scss" />
+    <Content Include="Content\sass\shortcodes\testimonials.scss" />
+    <Content Include="Content\sass\shortcodes\toggles-accordions.scss" />
+    <Content Include="Content\sass\shortcodes\youtubebg.scss" />
+    <Content Include="Content\sass\sliders.scss" />
+    <Content Include="Content\sass\topbar.scss" />
+    <Content Include="Content\sass\typography.scss" />
+    <Content Include="Content\sass\variables.scss" />
+    <Content Include="Content\sass\widgets.scss" />
+    <Content Include="Content\style.less" />
+    <Content Include="Content\style.scss" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Galeri.aspx" />
+    <Content Include="Iletisim.aspx" />
+    <Content Include="MisyonVizyon.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Anasayfa.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Sertifikalarimiz.aspx" />
+    <Content Include="Site.Master" />
+    <Content Include="UrunDetay.aspx" />
+    <Content Include="Urunlerimiz.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Hakkimizda.aspx.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hakkimizda.aspx.designer.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Bayilerimiz.aspx.cs">
+      <DependentUpon>Bayilerimiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bayilerimiz.aspx.designer.cs">
+      <DependentUpon>Bayilerimiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa.aspx.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.aspx.designer.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Galeri.aspx.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Galeri.aspx.designer.cs">
+      <DependentUpon>Galeri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Iletisim.aspx.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iletisim.aspx.designer.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MisyonVizyon.aspx.cs">
+      <DependentUpon>MisyonVizyon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MisyonVizyon.aspx.designer.cs">
+      <DependentUpon>MisyonVizyon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sertifikalarimiz.aspx.cs">
+      <DependentUpon>Sertifikalarimiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sertifikalarimiz.aspx.designer.cs">
+      <DependentUpon>Sertifikalarimiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UrunDetay.aspx.cs">
+      <DependentUpon>UrunDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrunDetay.aspx.designer.cs">
+      <DependentUpon>UrunDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Urunlerimiz.aspx.cs">
+      <DependentUpon>Urunlerimiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Urunlerimiz.aspx.designer.cs">
+      <DependentUpon>Urunlerimiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57425</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57425/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
