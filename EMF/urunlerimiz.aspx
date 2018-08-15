@@ -14,75 +14,27 @@
 
     <br>
     <div class="row">
-      <div class="col-sm-4 col-md-4">
+         <asp:SqlDataSource ID="SqlDataSource2" runat="server"
+        ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
+        ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
+        SelectCommand=" select image_url,isim from urunler_resim ur inner join urunler u on ur.urun_id = u.urun_id "></asp:SqlDataSource>
+        <asp:Repeater runat="server" DataSourceID="SqlDataSource2">
+            <ItemTemplate>
+                  <div class="col-sm-4 col-md-4">
         <div class="thumbnail">
           <a href="UrunDetay.aspx">
-            <img src="Content/images/urun1.jpeg" class="img-responsive" alt="Permag">
+            <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive">
             <div class="hover-opaque">
             </div>
             <i class="fa fa-fire fa-3x"></i>
           </a>
         </div>
         <div class="thumbnail thumbnail-caption text-center">
-          <figcaption><a href="UrunDetay.aspx">PERMAG</a></figcaption>
+          <figcaption><a href="UrunDetay.aspx"><%# Eval("isim") %></a></figcaption>
         </div>
       </div>
-      <div class="col-sm-4 col-md-4">
-        <div class="thumbnail">
-          <a href="UrunDetay.aspx">
-            <img src="Content/images/urun2.jpeg" class="img-responsive" alt="Akım baskılı fren ve kavrama">
-            <div class="hover-opaque">
-            </div>
-            <i class="fa fa-fire fa-3x"></i>
-          </a>
-        </div>
-        <div class="thumbnail thumbnail-caption text-center">
-          <figcaption><a href="UrunDetay.aspx">AKIM BASKILI FREN VE KAVRAMA</a></figcaption>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-4">
-        <div class="thumbnail">
-          <a href="UrunDetay.aspx">
-            <img src="Content/images/urun3.jpeg" class="img-responsive" alt="Akım baskılı tozlu fren ve kavrama">
-            <div class="hover-opaque">
-            </div>
-            <i class="fa fa-fire fa-3x"></i>
-          </a>
-        </div>
-        <div class="thumbnail thumbnail-caption text-center">
-          <figcaption><a href="UrunDetay.aspx">AKIM BASKILI TOZLU FREN VE KAVRAMA</a></figcaption>
-        </div>
-      </div>
-
-    </div>
-          <div class="row" style="margin-top: 20px;">
-      <div class="col-sm-4 col-md-4">
-        <div class="thumbnail">
-          <a href="UrunDetay.aspx">
-            <img src="Content/images/urun4.jpeg" class="img-responsive" alt="Yay baskılı frenler">
-            <div class="hover-opaque">
-            </div>
-            <i class="fa fa-fire fa-3x"></i>
-          </a>
-        </div>
-        <div class="thumbnail thumbnail-caption text-center">
-          <figcaption><a href="UrunDetay.aspx">YAY BASKILI FRENLER</a></figcaption>
-        </div>
-      </div>
-      <div class="col-sm-4 col-md-4">
-        <div class="thumbnail">
-          <a href="UrunDetay.aspx">
-            <img src="Content/images/urun5.png" class="img-responsive" alt="akım baskılı fren ve kavrama grubu">
-
-            <div class="hover-opaque">
-            </div>
-            <i class="fa fa-fire fa-3x"></i>
-          </a>
-        </div>
-        <div class="thumbnail thumbnail-caption text-center">
-          <figcaption><a href="UrunDetay.aspx">AKIM BASKILI FREN VE KAVRAMA GRUBU</a></figcaption>
-        </div>
-      </div>
+            </ItemTemplate>
+        </asp:Repeater>
     </div>
   </div>
 </div>
