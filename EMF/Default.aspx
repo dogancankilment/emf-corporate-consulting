@@ -11,7 +11,7 @@
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server"
                         ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
                         ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
-                        SelectCommand=" select sliderlar_url from anasayfa "></asp:SqlDataSource>
+                        SelectCommand=" select sliderlar_url from anasayfa where anasayfa_id<4"></asp:SqlDataSource>
                     <asp:Repeater runat="server" DataSourceID="SqlDataSource2">
                         <ItemTemplate>
                             <div class="swiper-slide dark" style="background-image: url('Content/images/<%# Eval("sliderlar_url") %>');">
@@ -100,25 +100,12 @@
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
-                             <div class="item active">
-
-                                <asp:SqlDataSource ID="SqlDataSource1" runat="server"
-                        ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
-                        ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
-                        SelectCommand=" select image_url from urunler_resim where kontrol=1 "></asp:SqlDataSource>
-                                <asp:Repeater runat="server" DataSourceID="SqlDataSource1">
-                                    <ItemTemplate>
-                                       
+                            <div class="item active">
                                 <div class="col-xs-4">
                                     <a href="#1">
-                                        <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive" style="border-radius: 40px;"></a>
+                                        <img src="Content/images/urun1.png" class="img-responsive" style="border-radius: 40px;"></a>
                                 </div>
-                                           
-                                        </ItemTemplate>
-                                </asp:Repeater>
-                                  </div>
-
-                              <%--  <div class="col-xs-4">
+                                <div class="col-xs-4">
                                     <a href="#1">
                                         <img src="Content/images/urun2.png" class="img-responsive" style="border-radius: 40px;"></a>
                                 </div>
@@ -127,35 +114,22 @@
                                         <img src="Content/images/urun3.png" class="img-responsive" style="border-radius: 40px;"></a>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="col-xs-4">
-                                    <a href="#1">
-                                        <img src="Content/images/urun4.png" class="img-responsive" style="border-radius: 40px;"></a>
-                                </div>
-                                <div class="col-xs-4">
-                                    <a href="#1">
-                                        <img src="Content/images/urun5.png" class="img-responsive" style="border-radius: 40px;"></a>
-                                </div>
-                                <div class="col-xs-4">
-                                    <a href="#1">
-                                        <img src="Content/images/urun6.png" class="img-responsive" style="border-radius: 40px;"></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-xs-4">
-                                    <a href="#1">
-                                        <img src="Content/images/urun7.png" class="img-responsive" style="border-radius: 40px;"></a>
-                                </div>
-                                <div class="col-xs-4">
-                                    <a href="#1">
-                                        <img src="Content/images/urun8.png" class="img-responsive" style="border-radius: 40px;"></a>
-                                </div>
-                                <div class="col-xs-4">
-                                    <a href="#1">
-                                        <img src="Content/images/urun9.png" class="img-responsive" style="border-radius: 40px;"></a>
-                                </div>
-                            </div>--%>
 
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"
+                                    ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
+                                    ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
+                                    SelectCommand=" select image_url from urunler_resim where kontrol=1 "></asp:SqlDataSource>
+                                
+                            <asp:Repeater runat="server" DataSourceID="SqlDataSource1">
+                                   <ItemTemplate>
+                                        <div class="item">
+                                            <div class="col-xs-4">
+                                                <a href="#1">
+                                                    <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive" style="border-radius: 40px;"></a>
+                                            </div>
+                                         </div>
+                                   </ItemTemplate>
+                            </asp:Repeater>
                         </div>
 
                         <!-- Controls -->
@@ -179,35 +153,23 @@
             <div class="container-fullwidth">
                 <div class="row">
 
-                    <div class="col-md-3" style="margin: 30px; width: 20% !important;">
-                        <div class="c-content-testimonial-3 c-option-light">
-                            <div class="c-content c-font-black">
-                                <a href="#" class="btn btn-danger" style="width: 250px; margin-top: -28px; background-color: #bf272d; border: 1px solid white; height: 60px; word-wrap: break-word; display: block;">Yay Baskılı Frenler</a>
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server"
+                        ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
+                        ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
+                        SelectCommand=" select katalog from anasayfa"></asp:SqlDataSource>
+                    <asp:Repeater runat="server" DataSourceID="SqlDataSource3">
+                        <ItemTemplate>
+                            <div class="col-md-3" style="margin: 30px; width: 20% !important;">
+                                <div class="c-content-testimonial-3 c-option-light">
+                                    <div class="c-content c-font-black">
+                                        <a href="Content/documents/<%# Eval("katalog") %>" class="btn btn-danger" style="width: 250px; margin-top: -28px; background-color: #bf272d; border: 1px solid white; height: 60px; word-wrap: break-word; display: block;"><%# Eval("katalog") %></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3" style="margin: 30px; width: 20% !important;">
-                        <div class="c-content-testimonial-3 c-option-light">
-                            <div class="c-content c-font-black">
-                                <a href="#" class="btn btn-danger" style="width: 250px; margin-top: -28px; background-color: #bf272d; border: 1px solid white; height: 60px; word-wrap: break-word; display: block;">Akım Baskılı Fren ve Kavrama</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3" style="margin: 30px; width: 20% !important;">
-                        <div class="c-content-testimonial-3 c-option-light">
-                            <div class="c-content c-font-black">
-                                <a href="#" class="btn btn-danger" style="width: 250px; margin-top: -28px; background-color: #bf272d; border: 1px solid white; height: 60px; word-wrap: break-word; display: block;">Akım Baskılı Tozlu Fren ve Kavrama</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-3" style="margin: 30px; width: 20% !important;">
-                        <div class="c-content-testimonial-3 c-option-light">
-                            <div class="c-content c-font-black">
-                                <a href="#" class="btn btn-danger" style="width: 250px; margin-top: -28px; background-color: #bf272d; border: 1px solid white; height: 60px; word-wrap: break-word; display: block;">Akım Baskılı Fren ve Kavrama Grubu</a>
-                            </div>
-                        </div>
-                    </div>
+                        </ItemTemplate>
+                    </asp:Repeater>
+
                 </div>
             </div>
         </div>
@@ -224,27 +186,22 @@
                         </div>
                     </div>
                     <div class="row">
+
+                        <asp:SqlDataSource ID="SqlDataSource4" runat="server"
+                        ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
+                        ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
+                        SelectCommand=" select duyurular_url from anasayfa where anasayfa_id<4"></asp:SqlDataSource>
+                        <asp:Repeater runat="server" DataSourceID="SqlDataSource4">
+                            <ItemTemplate>                                
                         <div class="col-md-3" style="border: 1px solid darkred; border-radius: 5px; margin: 45px;">
                             <div class="c-content-testimonial-3 c-option-light">
                                 <div class="c-content c-font-black">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae fringilla est. Mauris tincidunt dolor tortor.</p>
+                                    <p><%# Eval("duyurular_url") %></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3" style="border: 1px solid darkred; border-radius: 5px; margin: 45px;">
-                            <div class="c-content-testimonial-3 c-option-light">
-                                <div class="c-content c-font-black">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae fringilla est. Mauris tincidunt dolor tortor.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3" style="border: 1px solid darkred; border-radius: 5px; margin: 45px;">
-                            <div class="c-content-testimonial-3 c-option-light">
-                                <div class="c-content c-font-black">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae fringilla est. Mauris tincidunt dolor tortor.</p>
-                                </div>
-                            </div>
-                        </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </div>
                     <div class="row">
                         <div class="row text-center" style="padding-top: 0px; margin-top: 50px;">

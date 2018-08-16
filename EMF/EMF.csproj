@@ -459,6 +459,10 @@
     <Content Include="Content\sass\widgets.scss" />
     <Content Include="Content\style.less" />
     <Content Include="Content\style.scss" />
+    <Content Include="Content\documents\Akım-Baskılı-Fren-ve-Kavrama.pdf" />
+    <Content Include="Content\documents\Akım-Baskılı-Fren-ve-Kavrama-Grubu.pdf" />
+    <Content Include="Content\documents\Akım-Baskılı-Tozlu-Fren-ve-Kavrama.pdf" />
+    <Content Include="Content\documents\Yay-Baskılı-Frenler.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Galeri.aspx" />
     <Content Include="Iletisim.aspx" />
