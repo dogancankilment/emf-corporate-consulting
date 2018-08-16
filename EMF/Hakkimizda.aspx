@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Hakkımızda" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Hakkimizda.aspx.cs" Inherits="EMF.Hakkimizda" %>
+﻿<%@ Page Title="Hakkimizda" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Hakkimizda.aspx.cs" Inherits="EMF.Hakkimizda" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -11,10 +11,7 @@
 			</div>
 
 		</section><!-- #page-title end -->
-
-
-    <div class="container clearfix">
-      <div class="col-md-12">
+    <div class="container clearfix">      <div class="col-md-12">
         <blockquote style="padding-top: 70px;">					
             <p style="font-family: sans-serif; line-height: 30px;font-size: 15px;"> 2006 yılında üretime başlayan EMF Elektromanyetik Fren ve Kavrama Sistemleri Ltd. Şti. bir yıl içinde ISO9001-ISO14001 ve CE belgelerini alarak hizmet ve ürün kalitesinde çağdaş dünya seviyesine ulaşmış yurtiçi ve yurtdışı pazarda aranan bir marka olmuştur.<br />
             Gerekli makine, kalıp ve test cihazı yatırımlarını tamamlayıp ürün etiket değerleri ile performans değerlerinin uygunluğu sağlanmıştır.
@@ -25,7 +22,6 @@
             30.000 Adet/Yıl üretim kapasitesine ulaşan EMF Ltd. Şti. yakın gelecekte ürün yelpazesinde yenilerini ilave etmek üzere yoğun bir şekilde çalışmalara devam etmektedir.
             </p>
          </blockquote>
-       </div>
-    </div>
+       </div>    </div>
 
 </asp:Content>

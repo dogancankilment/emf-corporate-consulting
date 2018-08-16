@@ -108,7 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\yst-1.png" />
-    <Content Include="Hakkimizda.aspx" />
     <Content Include="Bayilerimiz.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -453,6 +452,7 @@
     <Content Include="Content\style.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Galeri.aspx" />
+    <Content Include="Hakkimizda.aspx" />
     <Content Include="Iletisim.aspx" />
     <Content Include="MisyonVizyon.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -507,13 +507,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Hakkimizda.aspx.cs">
-      <DependentUpon>Hakkimizda.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Hakkimizda.aspx.designer.cs">
-      <DependentUpon>Hakkimizda.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Bayilerimiz.aspx.cs">
       <DependentUpon>Bayilerimiz.aspx</DependentUpon>
@@ -538,6 +531,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkimizda.aspx.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hakkimizda.aspx.designer.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
     </Compile>
     <Compile Include="Iletisim.aspx.cs">
       <DependentUpon>Iletisim.aspx</DependentUpon>

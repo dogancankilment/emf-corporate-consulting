@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Ürünlerimiz" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Urunlerimiz.aspx.cs" Inherits="EMF.Urunlerimiz" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Urunlerimiz.aspx.cs" Inherits="EMF.Urunlerimiz" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
@@ -14,10 +14,10 @@
 
     <br>
     <div class="row">
-         <asp:SqlDataSource ID="SqlDataSource2" runat="server"
+              <asp:SqlDataSource ID="SqlDataSource2" runat="server"
         ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
         ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
-        SelectCommand=" select image_url,isim from urunler_resim ur inner join urunler u on ur.urun_id = u.urun_id "></asp:SqlDataSource>
+        SelectCommand=" select image_url,isim from urunler_resim ur inner join urunler u on ur.urun_id = u.urun_id where kontrol=2"></asp:SqlDataSource>
         <asp:Repeater runat="server" DataSourceID="SqlDataSource2">
             <ItemTemplate>
                   <div class="col-sm-4 col-md-4">
