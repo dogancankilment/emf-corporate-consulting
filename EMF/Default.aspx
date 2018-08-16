@@ -178,6 +178,7 @@
         <div class="content-wrap" style="background-color: #bf272d;">
             <div class="container-fullwidth">
                 <div class="row">
+
                     <div class="col-md-3" style="margin: 30px; width: 20% !important;">
                         <div class="c-content-testimonial-3 c-option-light">
                             <div class="c-content c-font-black">
