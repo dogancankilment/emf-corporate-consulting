@@ -131,6 +131,8 @@ blockquote p{
     }
 }
 
+
+
 .address {
     list-style-type:none !important;
 }
@@ -179,6 +181,23 @@ figcaption a {
         bottom:-77px !important;
     }
 }
+
+@media (max-width: 767px) and (min-width: 480px) {
+    .carousel-indicators {
+       bottom:-77px !important;
+    }
+}
+@media (min-width: 479px) {
+    .carousel-indicators {
+        bottom: -77px !important;
+    }
+}
+@media (min-width: 394px) {
+    .carousel-indicators {
+        bottom: -77px !important;
+    }
+}
+
 
 ::selection{
     background:lightblue !important;

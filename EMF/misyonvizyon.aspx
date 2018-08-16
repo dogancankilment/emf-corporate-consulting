@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Misyon - Vizyon" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MisyonVizyon.aspx.cs" Inherits="EMF.MisyonVizyon" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MisyonVizyon.aspx.cs" Inherits="EMF.MisyonVizyon" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         	<div>
 

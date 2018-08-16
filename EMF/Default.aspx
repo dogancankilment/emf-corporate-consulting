@@ -100,7 +100,7 @@
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
-                            <div class="item active">
+                             <div class="item active">
 
                                 <asp:SqlDataSource ID="SqlDataSource1" runat="server"
                         ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
@@ -108,15 +108,17 @@
                         SelectCommand=" select image_url from urunler_resim where kontrol=1 "></asp:SqlDataSource>
                                 <asp:Repeater runat="server" DataSourceID="SqlDataSource1">
                                     <ItemTemplate>
+                                       
                                 <div class="col-xs-4">
                                     <a href="#1">
                                         <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive" style="border-radius: 40px;"></a>
                                 </div>
+                                           
                                         </ItemTemplate>
                                 </asp:Repeater>
+                                  </div>
 
-
-                                <%--<div class="col-xs-4">
+                              <%--  <div class="col-xs-4">
                                     <a href="#1">
                                         <img src="Content/images/urun2.png" class="img-responsive" style="border-radius: 40px;"></a>
                                 </div>

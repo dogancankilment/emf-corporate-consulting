@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Sertifikalarımız" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Sertifikalarimiz.aspx.cs" Inherits="EMF.Sertifikalarimiz" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Sertifikalarimiz.aspx.cs" Inherits="EMF.Sertifikalarimiz" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 

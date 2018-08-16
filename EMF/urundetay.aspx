@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Ürün Detay" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UrunDetay.aspx.cs" Inherits="EMF.UrunDetay" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UrunDetay.aspx.cs" Inherits="EMF.UrunDetay" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
   <div class="container">

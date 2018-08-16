@@ -107,7 +107,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\images\yst-1.png" />
+    <Content Include="About.aspx" />
     <Content Include="Bayilerimiz.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -231,14 +231,23 @@
     <Content Include="Content\images\preloader-dark%402x.gif" />
     <Content Include="Content\images\preloader-dark.gif" />
     <Content Include="Content\images\preloader.gif" />
+    <Content Include="Content\images\resim1.png" />
     <Content Include="Content\images\slider1.jpeg" />
     <Content Include="Content\images\slider2.jpeg" />
     <Content Include="Content\images\slider3.jpeg" />
     <Content Include="Content\images\urun1.jpeg" />
+    <Content Include="Content\images\urun1.png" />
     <Content Include="Content\images\urun2.jpeg" />
+    <Content Include="Content\images\urun2.png" />
     <Content Include="Content\images\urun3.jpeg" />
+    <Content Include="Content\images\urun3.png" />
     <Content Include="Content\images\urun4.jpeg" />
+    <Content Include="Content\images\urun4.png" />
     <Content Include="Content\images\urun5.png" />
+    <Content Include="Content\images\urun6.png" />
+    <Content Include="Content\images\urun7.png" />
+    <Content Include="Content\images\urun8.png" />
+    <Content Include="Content\images\urun9.png" />
     <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 010.jpg" />
     <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 011.jpg" />
     <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 012.jpg" />
@@ -452,9 +461,9 @@
     <Content Include="Content\style.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Galeri.aspx" />
-    <Content Include="Hakkimizda.aspx" />
     <Content Include="Iletisim.aspx" />
     <Content Include="MisyonVizyon.aspx" />
+    <Content Include="resim1.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -484,7 +493,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Anasayfa.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Sertifikalarimiz.aspx" />
@@ -507,6 +516,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Bayilerimiz.aspx.cs">
       <DependentUpon>Bayilerimiz.aspx</DependentUpon>
@@ -515,12 +531,12 @@
     <Compile Include="Bayilerimiz.aspx.designer.cs">
       <DependentUpon>Bayilerimiz.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Anasayfa.aspx.cs">
-      <DependentUpon>Anasayfa.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Anasayfa.aspx.designer.cs">
-      <DependentUpon>Anasayfa.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Galeri.aspx.cs">
       <DependentUpon>Galeri.aspx</DependentUpon>
@@ -531,13 +547,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Hakkimizda.aspx.cs">
-      <DependentUpon>Hakkimizda.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Hakkimizda.aspx.designer.cs">
-      <DependentUpon>Hakkimizda.aspx</DependentUpon>
     </Compile>
     <Compile Include="Iletisim.aspx.cs">
       <DependentUpon>Iletisim.aspx</DependentUpon>
