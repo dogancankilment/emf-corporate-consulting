@@ -36,43 +36,13 @@
 
 							<div class="contact-form-result"></div>
 
-							<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
-
-								<div class="form-process"></div>
-
-								<div class="col_one_third">
-									<label for="template-contactform-name">İsim <small>*</small></label>
-									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
-								</div>
-
-								<div class="col_one_third">
-									<label for="template-contactform-email">E-Posta Adresi <small>*</small></label>
-									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
-								</div>
-
-								<div class="col_one_third col_last">
-									<label for="template-contactform-phone">Telefon</label>
-									<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
-								</div>
-
-								<div class="clear"></div>
-
-								<div class="clear"></div>
-
-								<div class="col_full">
-									<label for="template-contactform-message">Mesaj <small>*</small></label>
-									<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30" style="max-width: -webkit-fill-available;"></textarea>
-								</div>
-
-								<div class="col_full hidden">
-									<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-								</div>
-
-								<div class="col_full">
-									<button class="button button-3d nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Gönder</button>
-								</div>
-
-							</form>
+							    Message to: <asp:TextBox ID="txtTo" runat="server" /><br>
+                                Message from: <asp:TextBox ID="txtFrom" runat="server" /><br>
+                                Subject: <asp:TextBox ID="txtSubject" runat="server" /><br>
+                                Message Body:<br>
+                                <asp:TextBox ID="txtBody" runat="server" Height="171px" TextMode="MultiLine"  Width="270px" /><br>
+                                <asp:Button ID="Btn_SendMail" runat="server" onclick="Btn_SendMail_Click" Text="Send Email" /><br>
+                                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 						</div>
 
 					</div><!-- .postcontent end -->
