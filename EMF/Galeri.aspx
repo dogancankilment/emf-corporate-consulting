@@ -4,7 +4,8 @@
 
       <section id="page-title" class="page-title-parallax5 page-title-dark page-title-center" data-stellar-background-ratio="0.2">
 			<div class="container clearfix">
-				<h1 style="color: white;font-weight: bolder;font-size: 70px !important; margin-top: 120px;">GALERİ</h1>
+				<h1 data-animate="fadeInUp" style="font-size: 70px !important; margin-top: 120px; color:white; font-weight: bolder;" >GALERİ</h1>
+                <span data-animate="fadeInUp" data-delay="300">Elektromanyetik Fren ve Kavrama Sistemleri</span>
 			</div>
 
 	 </section><!-- #page-title end -->
