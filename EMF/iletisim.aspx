@@ -35,17 +35,41 @@
 						<div class="contact-widget">
 
 							<div class="contact-form-result"></div>
+                         	<div class="nobottommargin" id="template-contactform">
 
-							    Message to: <asp:TextBox ID="txtTo" runat="server" /><br>
-                                Message from: <asp:TextBox ID="txtFrom" runat="server" /><br>
-                                Subject: <asp:TextBox ID="txtSubject" runat="server" /><br>
-                                Message Body:<br>
-                                <asp:TextBox ID="txtBody" runat="server" Height="171px" TextMode="MultiLine"  Width="270px" /><br>
-                                <asp:Button ID="Btn_SendMail" runat="server" onclick="Btn_SendMail_Click" Text="Send Email" /><br>
-                                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
+                        	<div class="col_one_third">
+									<label for="template-contactform-name">İsim <small>*</small></label>
+									<asp:TextBox runat="server" ID="txtad" CssClass="sm-form-control required"></asp:TextBox>
+								</div>
+
+                            <div class="col_one_third">
+									<label for="template-contactform-email">Email <small>*</small></label>
+									<asp:TextBox runat="server" ID="txtemail" CssClass="required icon-email sm-form-control"></asp:TextBox>
+								</div>
+                            <div class="col_one_third col_last">
+									<label for="template-contactform-phone">Tel<small>*</small></label>
+									<asp:TextBox runat="server" ID="txttel" CssClass="sm-form-control"></asp:TextBox>
+								</div>
+
+                            <div class="clear"></div>
+                                              <div class="col_full">                                                                      
+                                <label for="template-contactform-message">Mesaj <small>*</small></label>
+                                <asp:TextBox TextMode="MultiLine" ID="txtBody" runat="server" Rows="6" CssClass="required sm-form-control"/><br>
+                                                  </div>
+
+                                 <div class="col_full hidden">
+									<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+								</div>
+                                 <div class="col_full">
+                                <asp:Button ID="Btn_SendMail" runat="server" onclick="Btn_SendMail_Click" CssClass="button button-3d nomargin" Text="GÖNDER" /><br>
+                                     </div>                         
+                                  
+                              </div>
+                        </div>
 						</div>
 
-					</div><!-- .postcontent end -->
+					<!-- .postcontent end -->
 
 					<!-- Sidebar
 					============================================= -->
@@ -83,14 +107,14 @@
 							</a>
 
 
-
+                         
 						</div>
 
 					</div><!-- .sidebar end -->
 
 				</div>
-
-			</div>
+               </div>
+			
 
 		</section><!-- #content end -->
 
