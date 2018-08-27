@@ -10,14 +10,11 @@
     <asp:SqlDataSource ID="SqlDataSource2" runat="server"
         ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
         ProviderName="<%$ ConnectionStrings:emf_dbConnectionString.ProviderName %>"
-        SelectCommand="select * from urun_resimler where urun_id=@urun_id"></asp:SqlDataSource>
+        SelectCommand="select * from urunler as u, urunler_resim as ur where u.urun_id=@id and ur.urun_id = @id and ur.kontrol = 3"></asp:SqlDataSource>
             
             <blockquote>
-            <h1>PERMAG (DOĞAL MIKNATISLI FREN SİSTEMİ)</h1>
-            <p>Akımsız durumda armatür disk sabit mıknatıslı alanın dinamik etkisi ile mıknatısın kutup yüzüne çekilir. Bir sürtünme yapar ve flanş ile bağlantı oluşturur.
-Uygulama zamanında mevcut doğal mıknatısın manyetik alanı, uyguladığında bobinin müdahalesi ile manyetik alan nötüralize edilir. Montaj konumuna bağımsız olarak bir kalıntı içermeden ayırma gerçekleşir. 
-Mıknatısların hemen yakınında bulunan mıknatıslanabilir malzemenin makine parçaları tork azaltabilir ve maksimum izin verilen boşluk ve serbest aralık değişikliğine yol açabilir. Böyle bir durumda fren manyetik verileri fabrika adaptasyonu gerektirir. Nominal torkuna güvenli bir çalışma aşamasından sonra ulaşılır.
-</p>
+            <h1 id="urunbaslik" style="margin-top: 25px;" runat="server"></h1> 
+            <p id="urunicerik" runat="server"></p>
 </blockquote>
         </div>
 
@@ -26,29 +23,37 @@ Mıknatısların hemen yakınında bulunan mıknatıslanabilir malzemenin makine
             <div class="col-sm-6" id="slider-thumbs">
                 <!-- Bottom switcher of slider -->
                 <ul class="hide-bullets" style="list-style-type: none;">
-                    <li class="col-sm-3">
+                    <asp:Panel runat="server" ID="habercokluresim">
+                    <div class="row">
+
+                        <div class="featured-box featured-box-primary col-lg-12" style="padding: 0px;">
+                            <div class="box-content">
+                                <h4 class="text-uppercase">Haber Fotoğrafları</h4>
+
+                                <div class="col-md-12" style="margin-bottom:25px;">
+                                    <%--<asp:SqlDataSource ID="SqlDataSource3" runat="server"
+                                        ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
+                                        ProviderName="<%$ ConnectionStrings:emf_dbConnectionString.ProviderName %>"
+                                        SelectCommand="Select  * from urunler_resim where kontrol=3 and urun_id=@id"></asp:SqlDataSource>--%>
+                                    <div>
+                                        <asp:ListView ID="ListView1" runat="server" OnPreRender="ListView1_PreRender" DataSourceID="SqlDataSource2">
+                                            <ItemTemplate>
+                                                <a href="<%#"/Content/images/"+Eval("image_url") %>">
+                                                    <img src="<%#"/Content/images/"+Eval("image_url") %>" width="75" height="75">
+                                            </ItemTemplate>
+                                        </asp:ListView>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </asp:Panel>
+                        
+                        <li class="col-sm-3">
                         <a class="thumbnail" id="carousel-selector-0">
-                            <img src="Content/images/urunP1.JPG">
+                            <asp:Image ID="urungorsel" runat="server" CssClass="img-responsive" />
                         </a>
                     </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-1"><img src="Content/images/urunP2.JPG"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-2"><img src="Content/images/urunP3.JPG"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-3"><img src="Content/images/urunP4.JPG"></a>
-                    </li>
-
-                    <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-4"><img src="Content/images/urunP5.JPG"></a>
-                    </li>
-
-
 
                 </ul>
             </div>
