@@ -18,9 +18,9 @@
               <asp:SqlDataSource ID="SqlDataSource2" runat="server"
         ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
         ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
-        SelectCommand=" select image_url,isim from urunler_resim ur inner join urunler u on ur.urun_id = u.urun_id where kontrol=2"></asp:SqlDataSource>
+        SelectCommand=" select image_url,isim,ur.urun_id as id from urunler_resim ur inner join urunler u on ur.urun_id = u.urun_id where kontrol=2"></asp:SqlDataSource>
         <asp:Repeater runat="server" DataSourceID="SqlDataSource2">
-            <ItemTemplate>
+            <ItemTemplate> 
                   <div class="col-sm-4 col-md-4">
         <div class="thumbnail">
           <a href="UrunDetay.aspx">
@@ -31,7 +31,7 @@
           </a>
         </div>
         <div class="thumbnail thumbnail-caption text-center">
-          <figcaption><a href="UrunDetay.aspx"><%# Eval("isim") %></a></figcaption>
+         <a href="<%# "UrunDetay.aspx?postquestion="+ Eval("id") %>"><%# Eval("isim") %></a>
         </div>
       </div>
             </ItemTemplate>

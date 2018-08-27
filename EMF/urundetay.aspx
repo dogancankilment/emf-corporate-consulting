@@ -6,7 +6,11 @@
         <!-- Slider -->
 
         <div class="row" style="margin-top:80px;">
-
+           
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server"
+        ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
+        ProviderName="<%$ ConnectionStrings:emf_dbConnectionString.ProviderName %>"
+        SelectCommand="select * from urun_resimler where urun_id=@urun_id"></asp:SqlDataSource>
             
             <blockquote>
             <h1>PERMAG (DOĞAL MIKNATISLI FREN SİSTEMİ)</h1>

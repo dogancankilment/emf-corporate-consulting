@@ -29,7 +29,8 @@ namespace EMF
             mail.From = new MailAddress("surveydck@gmail.com", "Test");
             mail.To.Add(new MailAddress("yazilim@dogruyer.com.tr"));
             mail.CC.Add(new MailAddress("webyazilim@dogruyer.com.tr"));
-            mail.Body = txtBody.Text;
+            mail.Body = txtad.Text + txtemail.Text + txttel.Text + txtBody.Text;
+            
 
             smtpClient.Send(mail);
         }

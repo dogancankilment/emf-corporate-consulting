@@ -113,7 +113,7 @@
 					</div><!-- .sidebar end -->
 
 				</div>
-               </div>
+              </div>
 			
 
 		</section><!-- #content end -->
