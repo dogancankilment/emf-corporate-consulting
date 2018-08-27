@@ -31,29 +31,23 @@
                                 <h4 class="text-uppercase">Haber Fotoğrafları</h4>
 
                                 <div class="col-md-12" style="margin-bottom:25px;">
-                                    <%--<asp:SqlDataSource ID="SqlDataSource3" runat="server"
-                                        ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
-                                        ProviderName="<%$ ConnectionStrings:emf_dbConnectionString.ProviderName %>"
-                                        SelectCommand="Select  * from urunler_resim where kontrol=3 and urun_id=@id"></asp:SqlDataSource>--%>
-                                    <div>
+                               
+                               
                                         <asp:ListView ID="ListView1" runat="server" OnPreRender="ListView1_PreRender" DataSourceID="SqlDataSource2">
                                             <ItemTemplate>
+                                                  
                                                 <a href="<%#"/Content/images/"+Eval("image_url") %>">
-                                                    <img src="<%#"/Content/images/"+Eval("image_url") %>" width="75" height="75">
+                                                    <img src="<%#"/Content/images/"+Eval("image_url") %>" width="150" height="150">
+                                                    
                                             </ItemTemplate>
                                         </asp:ListView>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </asp:Panel>
-                        
-                        <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-0">
-                            <asp:Image ID="urungorsel" runat="server" CssClass="img-responsive" />
-                        </a>
-                    </li>
+                    </asp:Panel>          
+                 
 
                 </ul>
             </div>
@@ -64,23 +58,15 @@
                         <div class="col-sm-12" id="carousel-bounding-box">
                             <div class="carousel slide" id="myCarousel">
                                 <!-- Carousel items -->
-                                <div class="carousel-inner">
+                                <div class="carousel-inner">                                    
                                     <div class="active item" data-slide-number="0">
-                                        <img src="Content/images/urunP1.JPG"></div>
-
-                                    <div class="item" data-slide-number="1">
-                                        <img src="Content/images/urunP2.JPG"></div>
-
-                                    <div class="item" data-slide-number="2">
-                                        <img src="Content/images/urunP3.JPG"></div>
-
-                                    <div class="item" data-slide-number="3">
-                                        <img src="Content/images/urunP4.JPG"></div>
-
-                                    <div class="item" data-slide-number="4">
-                                        <img src="Content/images/urunP5.JPG"></div>
-
-                                   
+                                        <img src="Content/images/permag1.jpg"></div>
+                                        <asp:Repeater runat="server" DataSourceID="SqlDataSource2">
+                                        <ItemTemplate>
+                                    <div class="item" data-slide-number="1" >
+                                        <img src="<%#"Content/images/"+Eval("image_url") %>"></div>
+                                        </ItemTemplate>
+                                   </asp:Repeater>
                                 </div>
                                 <!-- Carousel nav -->
                                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">

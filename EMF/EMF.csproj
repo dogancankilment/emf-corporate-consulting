@@ -226,12 +226,16 @@
     <Content Include="Content\images\ISO 9001 - 2018-1.jpg" />
     <Content Include="Content\images\pattern.png" />
     <Content Include="Content\images\pattern2.png" />
+    <Content Include="Content\images\permag1.jpg" />
+    <Content Include="Content\images\permag2.jpg" />
+    <Content Include="Content\images\permag3.jpg" />
+    <Content Include="Content\images\permag4.jpg" />
+    <Content Include="Content\images\permag5.jpg" />
     <Content Include="Content\images\phone.jpeg" />
     <Content Include="Content\images\preloader%402x.gif" />
     <Content Include="Content\images\preloader-dark%402x.gif" />
     <Content Include="Content\images\preloader-dark.gif" />
     <Content Include="Content\images\preloader.gif" />
-    <Content Include="Content\images\resim1.png" />
     <Content Include="Content\images\slider1.jpeg" />
     <Content Include="Content\images\slider2.jpeg" />
     <Content Include="Content\images\slider3.jpeg" />
@@ -264,11 +268,6 @@
     <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 023.jpg" />
     <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 024.jpg" />
     <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 025.jpg" />
-    <Content Include="Content\images\urunP1.JPG" />
-    <Content Include="Content\images\urunP2.JPG" />
-    <Content Include="Content\images\urunP3.JPG" />
-    <Content Include="Content\images\urunP4.JPG" />
-    <Content Include="Content\images\urunP5.JPG" />
     <Content Include="Content\images\world-map.png" />
     <Content Include="Content\images\youtube.jpeg" />
     <Content Include="Content\images\y_arkaplan.jpeg" />
@@ -467,7 +466,6 @@
     <Content Include="Galeri.aspx" />
     <Content Include="Iletisim.aspx" />
     <Content Include="MisyonVizyon.aspx" />
-    <Content Include="resim1.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
