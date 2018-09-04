@@ -64,23 +64,37 @@
                                 </div>
                             </div>
 
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"
-                                    ConnectionString="<%$ ConnectionStrings:emf_dbConnectionString %>"
-                                    ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
-                                    SelectCommand=" select image_url from urunler_resim where kontrol=1 "></asp:SqlDataSource>
-                                
-                                          
-                                               
-                            <asp:Repeater runat="server" DataSourceID="SqlDataSource1">
-                                   <ItemTemplate>
+                            
+                                  
                                          <div class="item">
                                          <div class="col-xs-4">
-                                              <a href="#1">
-                                                    <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive" style="border-radius: 40px;"></a>
-                                            </div>
+                                    <a href="#1">
+                                        <img src="Content/images/urun4.png" class="img-responsive" style="border-radius: 40px;"></a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="#1">
+                                        <img src="Content/images/urun5.png" class="img-responsive" style="border-radius: 40px;"></a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="#1">
+                                        <img src="Content/images/urun6.png" class="img-responsive" style="border-radius: 40px;"></a>
+                                </div>
                                               </div>
-                                   </ItemTemplate>
-                            </asp:Repeater>
+                              <div class="item">
+                                         <div class="col-xs-4">
+                                    <a href="#1">
+                                        <img src="Content/images/urun7.png" class="img-responsive" style="border-radius: 40px;"></a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="#1">
+                                        <img src="Content/images/urun8.png" class="img-responsive" style="border-radius: 40px;"></a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="#1">
+                                        <img src="Content/images/urun9.png" class="img-responsive" style="border-radius: 40px;"></a>
+                                </div>
+                                              </div>
+                                 
                                                     
                                         
                         </div>
