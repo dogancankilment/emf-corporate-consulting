@@ -21,23 +21,39 @@
         SelectCommand=" select image_url,isim,ur.urun_id as id from urunler_resim ur inner join urunler u on ur.urun_id = u.urun_id where kontrol=2"></asp:SqlDataSource>
         <asp:Repeater runat="server" DataSourceID="SqlDataSource2">
             <ItemTemplate> 
-                  <div class="col-sm-4 col-md-4">
-        <div class="thumbnail" "> 
-          <a href="UrunDetay.aspx">
-            <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive" style="width:360px; height:480px;">
-            <div class="hover-opaque">
-            </div>
-            <i class="fa fa-fire fa-3x"></i>
-          </a>
-        </div>
-        <div class="thumbnail thumbnail-caption text-center">
-         <a href="<%# "UrunDetay.aspx?postquestion="+ Eval("id") %>"><%# Eval("isim") %></a>
-        </div>
-      </div>
+                    <div class="col-sm-3 col-md-4">
+                            <div class="col-item">
+                                <div class="photo">
+                                   <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive" style="width:360px; height:480px;">
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h5 style="height:20px;"><%# Eval("isim") %></h5>                                           
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="separator clear-left">                                     
+                                        <p class="btn-details">
+                                          <a href="<%# "UrunDetay.aspx?postquestion="+ Eval("id") %>" class="hidden-sm">More details</a></p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
             </ItemTemplate>
         </asp:Repeater>
+
+       
+
+
     </div>
   </div>
 </div>
 
 </asp:Content>
+
+
+
+     
