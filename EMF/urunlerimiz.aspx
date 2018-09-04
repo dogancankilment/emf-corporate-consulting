@@ -22,9 +22,9 @@
         <asp:Repeater runat="server" DataSourceID="SqlDataSource2">
             <ItemTemplate> 
                   <div class="col-sm-4 col-md-4">
-        <div class="thumbnail">
+        <div class="thumbnail" "> 
           <a href="UrunDetay.aspx">
-            <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive">
+            <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive" style="width:360px; height:480px;">
             <div class="hover-opaque">
             </div>
             <i class="fa fa-fire fa-3x"></i>

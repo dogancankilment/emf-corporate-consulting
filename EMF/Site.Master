@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     	<meta name="viewport" content="width=device-width, initial-scale=1" />    	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - EMF Fren ve Kavrama Sistemleri</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
