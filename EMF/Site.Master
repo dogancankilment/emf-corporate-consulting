@@ -157,19 +157,19 @@
 						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
 						<ul>
-							<li><a href="Default.aspx">ANASAYFA</a>
+							<li><a href="anasayfa">ANASAYFA</a>
 							</li>
-							<li><a href="About.aspx">HAKKIMIZDA</a>
+							<li><a href="hakkimizda">HAKKIMIZDA</a>
 								<ul style="border-top-color: white;">
-									<li><a href="About.aspx">TARİHÇEMİZ</a></li>
-									<li><a href="MisyonVizyon.aspx">MİSYON-VİZYON</a></li>
-									<li><a href="Sertifikalarimiz.aspx">SERTİFİKALARIMIZ</a></li>
+									<li><a href="hakkimizda">TARİHÇEMİZ</a></li>
+									<li><a href="misyonvizyon">MİSYON-VİZYON</a></li>
+									<li><a href="sertifikalarimiz">SERTİFİKALARIMIZ</a></li>
 								</ul>
 							</li>
-							<li ><a href="Urunlerimiz.aspx"><div>ÜRÜNLERİMİZ</div></a></li>
-							<li ><a href="Bayilerimiz.aspx"><div>BAYİLERİMİZ</div></a></li>
-							<li ><a href="Galeri.aspx"><div>GALERİ</div></a></li>
-							<li><a href="Iletisim.aspx"><div>İLETİŞİM</div></a></li>
+							<li ><a href="urunlerimiz"><div>ÜRÜNLERİMİZ</div></a></li>
+							<li ><a href="bayilerimiz"><div>BAYİLERİMİZ</div></a></li>
+							<li ><a href="galeri"><div>GALERİ</div></a></li>
+							<li><a href="iletisim"><div>İLETİŞİM</div></a></li>
 						</ul>
 
 					</div>

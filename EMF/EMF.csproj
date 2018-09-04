@@ -107,8 +107,12 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Bayilerimiz.aspx" />
+    <Content Include="hakkimizda.aspx">
+      <BrowseToURL>~/hakkimizda.aspx</BrowseToURL>
+    </Content>
+    <Content Include="bayilerimiz.aspx">
+      <BrowseToURL>~/bayilerimiz</BrowseToURL>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\animate.css" />
@@ -503,9 +507,15 @@
     <Content Include="Content\documents\Akım-Baskılı-Tozlu-Fren-ve-Kavrama.pdf" />
     <Content Include="Content\documents\Yay-Baskılı-Frenler.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Galeri.aspx" />
-    <Content Include="Iletisim.aspx" />
-    <Content Include="MisyonVizyon.aspx" />
+    <Content Include="galeri.aspx">
+      <BrowseToURL>~/galeri</BrowseToURL>
+    </Content>
+    <Content Include="Iletisim.aspx">
+      <BrowseToURL>~/iletisim</BrowseToURL>
+    </Content>
+    <Content Include="MisyonVizyon.aspx">
+      <BrowseToURL>~/misyonvizyon</BrowseToURL>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -535,13 +545,21 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Default.aspx" />
+    <Content Include="anasayfa.aspx">
+      <BrowseToURL>~/anasayfa</BrowseToURL>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Sertifikalarimiz.aspx" />
+    <Content Include="Sertifikalarimiz.aspx">
+      <BrowseToURL>~/sertifikalarimiz</BrowseToURL>
+    </Content>
     <Content Include="Site.Master" />
-    <Content Include="UrunDetay.aspx" />
-    <Content Include="Urunlerimiz.aspx" />
+    <Content Include="UrunDetay.aspx">
+      <BrowseToURL>~/urun-detay</BrowseToURL>
+    </Content>
+    <Content Include="Urunlerimiz.aspx">
+      <BrowseToURL>~/urunlerimiz</BrowseToURL>
+    </Content>
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -558,34 +576,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="hakkimizda.aspx.cs">
+      <DependentUpon>hakkimizda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="hakkimizda.aspx.designer.cs">
+      <DependentUpon>hakkimizda.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Bayilerimiz.aspx.cs">
-      <DependentUpon>Bayilerimiz.aspx</DependentUpon>
+    <Compile Include="bayilerimiz.aspx.cs">
+      <DependentUpon>bayilerimiz.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Bayilerimiz.aspx.designer.cs">
-      <DependentUpon>Bayilerimiz.aspx</DependentUpon>
+    <Compile Include="bayilerimiz.aspx.designer.cs">
+      <DependentUpon>bayilerimiz.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="anasayfa.aspx.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="anasayfa.aspx.designer.cs">
+      <DependentUpon>anasayfa.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Galeri.aspx.cs">
-      <DependentUpon>Galeri.aspx</DependentUpon>
+    <Compile Include="galeri.aspx.cs">
+      <DependentUpon>galeri.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Galeri.aspx.designer.cs">
-      <DependentUpon>Galeri.aspx</DependentUpon>
+    <Compile Include="galeri.aspx.designer.cs">
+      <DependentUpon>galeri.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

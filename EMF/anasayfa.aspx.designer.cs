@@ -10,7 +10,7 @@
 namespace EMF {
     
     
-    public partial class _Default {
+    public partial class _anasayfa {
         
         /// <summary>
         /// SqlDataSource2 control.

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace EMF
 {
-    public partial class About : Page
+    public partial class _anasayfa : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
