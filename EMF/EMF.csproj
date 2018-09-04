@@ -226,6 +226,7 @@
     <Content Include="Content\images\background5.png" />
     <Content Include="Content\images\background6.jpg" />
     <Content Include="Content\images\blank.svg" />
+    <Content Include="Content\images\call-us-on.png" />
     <Content Include="Content\images\camera_skins.png" />
     <Content Include="Content\images\copy.jpeg" />
     <Content Include="Content\images\EMF CE-1.png" />
@@ -296,6 +297,7 @@
     <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 023.jpg" />
     <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 024.jpg" />
     <Content Include="Content\images\urunfotograf\EMF FREN RESİMLERİ 025.jpg" />
+    <Content Include="Content\images\we-are-here.png" />
     <Content Include="Content\images\world-map.png" />
     <Content Include="Content\images\ybk.jpg" />
     <Content Include="Content\images\ybk1.jpg" />

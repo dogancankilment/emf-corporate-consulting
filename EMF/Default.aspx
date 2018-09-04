@@ -69,16 +69,20 @@
                                     ProviderName="<%$ ConnectionStrings:emf_DbConnectionString.ProviderName %>"
                                     SelectCommand=" select image_url from urunler_resim where kontrol=1 "></asp:SqlDataSource>
                                 
+                                          
+                                               
                             <asp:Repeater runat="server" DataSourceID="SqlDataSource1">
                                    <ItemTemplate>
-                                        <div class="item">
-                                            <div class="col-xs-4">
-                                                <a href="#1">
+                                         <div class="item">
+                                         <div class="col-xs-4">
+                                              <a href="#1">
                                                     <img src="Content/images/<%# Eval("image_url") %>" class="img-responsive" style="border-radius: 40px;"></a>
                                             </div>
-                                         </div>
+                                              </div>
                                    </ItemTemplate>
                             </asp:Repeater>
+                                                    
+                                        
                         </div>
                     </div>
                 </div>

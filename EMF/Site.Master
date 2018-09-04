@@ -123,20 +123,22 @@
                          </div>
                     </div>--%>
 
-                <div class="col-sm-4 pull-right ustaramayer" style="border:1px solid darkred; ">
+                <div class="col-sm-4 pull-right ustaramayer ">
                     <div class="col-sm-12">
-                        <div class="row" style="padding-left:10px; line-height: 50px; text-align:center;">
-                             <span class="c-font-black">
-                                <img src="Content/images/phone.jpeg" style="width:20px;" />
-                                <strong>0(212)671 47 97</strong>
-                            </span>
+                        <div class="row">
+                        <div class="row col-md-6" style="padding-left:10px; line-height: 50px; text-align:center;">
+                             <dt><span>İLETİŞİM</span></dt>
+                                <img src="Content/images/we-are-here.png" style="width:20px;" />
+                                <dd><strong>0(212)671 47 97</strong></dd>                            
                             </div>
-                        <div class="row" style="padding-left:10px; line-height: 50px; text-align:center;">
+                        <div class="row col-md-6" style="padding-left:10px; line-height: 50px; text-align:center;">
                             <span class="c-font-black">
-                                <img src="Content/images/envelope.jpeg" style="width:20px;" />
-                                <strong>emf@emffren.com.tr</strong>
+                                <dt><span>MAİL ADRES</span></dt>
+                                <img src="Content/images/call-us-on.png" style="width:20px;" />
+                               <dd> <strong>emf@emffren.com.tr</strong></dd>
                             </span>
                         </div>
+                            </div>
                     </div>
                 </div>
 
