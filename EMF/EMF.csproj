@@ -509,6 +509,7 @@
     <Content Include="Content\documents\Akım-Baskılı-Fren-ve-Kavrama-Grubu.pdf" />
     <Content Include="Content\documents\Akım-Baskılı-Tozlu-Fren-ve-Kavrama.pdf" />
     <Content Include="Content\documents\Yay-Baskılı-Frenler.pdf" />
+    <None Include="Properties\PublishProfiles\emf.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="galeri.aspx">
       <BrowseToURL>~/galeri</BrowseToURL>

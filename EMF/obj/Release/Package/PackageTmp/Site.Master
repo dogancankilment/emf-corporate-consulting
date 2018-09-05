@@ -1,0 +1,328 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EMF.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1" />    	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+    <title><%: Page.Title %> - EMF Fren ve Kavrama Sistemleri</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link type="text/css" href="Content/bootstrap.css" rel="stylesheet" />
+    <link type="text/css" href="Content/style.css" rel="stylesheet" />
+    <link type="text/css" href="Content/css/swiper.css" rel="stylesheet" />
+    <link type="text/css" href="Content/css/dark.css" rel="stylesheet" />
+    <link type="text/css" href="Content/css/font-icons.css" rel="stylesheet" />
+    <link type="text/css" href="Content/css/animate.css" rel="stylesheet" />
+    <link type="text/css" href="Content/css/magnific-popup.css" rel="stylesheet" />
+    <link type="text/css" href="Content/css/responsive.css" rel="stylesheet" />
+    <link type="text/css" href="Content/Site.css" rel="stylesheet" />
+
+</head>
+<body class="stretched" style=" overflow-x: hidden;">
+   <div id="wrapper" class="clearfix">
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+
+
+		<!-- Header
+		============================================= -->
+		  <%--<header id="header" class="transparent-header full-header dark">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"> <i class="icon-reorder"></i></div>
+
+                   
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="Default.aspx" class="standard-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
+						<a href="Default.aspx" class="retina-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul>
+							<li><a href="Default.aspx">ANASAYFA</a>
+							</li>
+							<li><a href="About.aspx">HAKKIMIZDA</a>
+								<ul style="border-top-color: white;">
+									<li><a href="About.aspx">TARİHÇEMİZ</a></li>
+									<li><a href="MisyonVizyon.aspx">MİSYON-VİZYON</a></li>
+									<li><a href="Sertifikalarimiz.aspx">SERTİFİKALARIMIZ</a></li>
+								</ul>
+							</li>
+							<li class="mega-menu"><a href="Urunlerimiz.aspx"><div>ÜRÜNLERİMİZ</div></a></li>
+							<li class="mega-menu"><a href="Bayilerimiz.aspx"><div>BAYİLERİMİZ</div></a></li>
+							<li class="mega-menu"><a href="Galeri.aspx"><div>GALERİ</div></a></li>
+							<li><a href="Iletisim.aspx"><div>İLETİŞİM</div></a></li>
+						</ul>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+
+
+		</header>--%><!-- #header end -->        <header id="header" class="sticky-style-2">
+
+			<div class="container clearfix" style="margin-bottom: 10px;">
+
+				<!-- Logo
+				============================================= -->
+					<div id="logo">
+						<a href="/" class="standard-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
+						<a href="/" class="retina-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+<%--                    <div class="row" style="float:right;">
+                        <div class="column">
+                             <img src="Content/images/envelope.jpeg" style="width:20px;" />
+                        </div>
+                    </div>
+
+                     <div class="row" style="float:right;">
+                        <div class="column">      
+                            <img src="Content/images/phone.jpeg" style="width:20px;" />
+                         </div>
+                    </div>--%>
+
+                <div class="col-sm-4 pull-right ustaramayer ">
+                    <div class="col-sm-12">
+                        <div class="row">
+                        <div class="row col-md-6" style="padding-left:10px; line-height: 50px; text-align:center;">
+                             <dt><span>İLETİŞİM</span></dt>
+                                <img src="Content/images/we-are-here.png" style="width:20px;" />
+                                <dd><strong>0(212)671 47 97</strong></dd>                            
+                            </div>
+                        <div class="row col-md-6" style="padding-left:10px; line-height: 50px; text-align:center;">
+                            <span class="c-font-black">
+                                <dt><span>MAİL ADRES</span></dt>
+                                <img src="Content/images/call-us-on.png" style="width:20px;" />
+                               <dd> <strong>emf@emffren.com.tr</strong></dd>
+                            </span>
+                        </div>
+                            </div>
+                    </div>
+                </div>
+
+
+
+			</div>
+
+			<div id="header-wrap">
+
+				<!-- Primary Navigation
+				============================================= -->
+				<nav id="primary-menu" class="style-2" style="background-image:url('Content/images/header.jpeg')" >
+
+					<div class="container clearfix">
+
+						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+						<ul>
+							<li><a href="/">ANASAYFA</a>
+							</li>
+							<li><a href="hakkimizda">HAKKIMIZDA</a>
+								<ul style="border-top-color: white;">
+									<li><a href="hakkimizda">TARİHÇEMİZ</a></li>
+									<li><a href="misyonvizyon">MİSYON-VİZYON</a></li>
+									<li><a href="sertifikalarimiz">SERTİFİKALARIMIZ</a></li>
+								</ul>
+							</li>
+							<li ><a href="urunlerimiz"><div>ÜRÜNLERİMİZ</div></a></li>
+							<li ><a href="bayilerimiz"><div>BAYİLERİMİZ</div></a></li>
+							<li ><a href="galeri"><div>GALERİ</div></a></li>
+							<li><a href="iletisim"><div>İLETİŞİM</div></a></li>
+						</ul>
+
+					</div>
+
+				</nav><!-- #primary-menu end -->
+
+			</div>
+
+		</header><!-- #header end -->
+
+
+        <div class="container_fullwidth">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+           <footer id="footer" class="dark" style="margin-bottom: -20px; background-size: cover; background-image:url('Content/images/footer.jpeg') ">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix">
+
+					<div class="row">
+
+						<div class="col-md-4">
+
+							<div class="widget widget_links clearfix" style="text-align:center;">
+
+								<h4>ÜRÜN KATEGORİLERİ</h4>
+
+								<ul>
+									<li><a href="#">Yay Baskılı Frenler</a></li>
+									<li><a href="#">Akım Baskılı Fren ve Kavrama</a></li>
+									<li><a href="#">Akım Baskılı Tozlu Fren ve Kavrama</a></li>
+									<li><a href="#">Akım Baskılı Fren ve Kavrama Grubu</a></li>
+									<li><a href="#">Permag</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+
+						<div class="col-md-4">
+
+							<div class="widget clearfix">
+
+								<h4>HARİTADA YERİMİZ</h4>
+                                
+                                <iframe width="100%" height="75" frameborder="0" style="border: 0;height: 220px; padding-bottom: 20px;"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.9938179059604!2d28.798398915129848!3d41.069127779294625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa5906fb866ff%3A0x9fbfe6c222412a69!2sZiya+G%C3%B6kalp+Mahallesi%2C+5A+Block+No%3A54%2C+34490+%C4%B0kitelli+Osb%2FBa%C5%9Fak%C5%9Fehir%2FIstanbul!5e0!3m2!1str!2str!4v1503742226162"
+                                allowfullscreen></iframe>
+
+							</div>
+
+						</div>
+
+                        <div class="col-md-4">
+
+							<div class="widget clearfix" style="text-align:center;">
+
+                                <h4>BİZE ULAŞIN</h4>
+
+									<address>
+										<strong>Adres:</strong><br>
+										Metal İş Sanayi Sitesi 12. Blok No:7-9<br>
+										İkitelli / İSTANBUL<br>
+									</address>
+									<abbr><strong>Telefon:</strong></abbr> 0(212)671 47 97<br>
+									<abbr><strong>Fax:</strong></abbr> 0(212)671 47 26<br>
+									<abbr><strong>E-posta:</strong></abbr> emf@emffren.com.tr
+
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" style="padding-top: 5px; padding-bottom: 5px; background-image:url('Content/images/copy.jpeg')">
+
+				<div class="container clearfix">
+
+					<div class="col-md-10" style="color:white;">
+						Copyrights &copy; 2018 All Rights Reserved by Dogruyer<br>
+					</div>
+
+					<div class="col-md-2">
+						<div class="widget noborder notoppadding">
+
+							<a href="#" class="social-icon si-small si-dark si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-dark si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+                            <a href="#" class="social-icon si-small si-dark si-instagram">
+								<i class="icon-instagram"></i>
+								<i class="icon-instagram"></i>
+							</a>
+
+                            <a href="#" class="social-icon si-small si-dark si-youtube">
+								<i class="icon-youtube"></i>
+								<i class="icon-youtube"></i>
+							</a>
+
+						</div>
+
+						<div class="clear"></div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+        </div>
+
+    </form>
+
+
+<%--    <script>
+        $(window).scroll(function () {
+            var sticky = $('#header'),
+              scroll = $(window).scrollTop();
+
+            if (scroll >= 40) {
+                sticky.addClass('fixed');
+            }
+            else {
+                sticky.removeClass('fixed');
+
+            }
+        });
+    </script>--%>
+</div>
+
+    
+    <script type="text/javascript" src="Content/js/jquery.js"></script>
+    <script type="text/javascript" src="Content/js/functions.js"></script>
+    <script type="text/javascript" src="Content/js/plugins.js"></script>
+</body>
+</html>
