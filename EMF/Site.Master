@@ -107,8 +107,8 @@
 				<!-- Logo
 				============================================= -->
 					<div id="logo">
-						<a href="Default.aspx" class="standard-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
-						<a href="Default.aspx" class="retina-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
+						<a href="/" class="standard-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
+						<a href="/" class="retina-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
 <%--                    <div class="row" style="float:right;">
@@ -157,7 +157,7 @@
 						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
 						<ul>
-							<li><a href="anasayfa">ANASAYFA</a>
+							<li><a href="/">ANASAYFA</a>
 							</li>
 							<li><a href="hakkimizda">HAKKIMIZDA</a>
 								<ul style="border-top-color: white;">

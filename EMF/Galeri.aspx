@@ -22,29 +22,43 @@
         <br/>
 
             <div style="padding-top: 10px; padding-bottom:10px;" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="Content/images/urun2.png" class="img-responsive">
             </div>
 
             <div style="padding-top: 10px; padding-bottom:10px;" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="Content/images/urun1.png" class="img-responsive">
             </div>
 
             <div style="padding-top: 10px; padding-bottom:10px;" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="Content/images/urun3.png" class="img-responsive">
             </div>
 
             <br />
 
             <div style="padding-top: 10px; padding-bottom:10px;" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="Content/images/urun4.png" class="img-responsive">
             </div>
 
             <div style="padding-top: 10px; padding-bottom:10px;" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="Content/images/urun5.png" class="img-responsive">
             </div>
 
             <div style="padding-top: 10px; padding-bottom:10px;" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="Content/images/urun6.png" class="img-responsive">
+            </div>
+
+            <br />
+
+            <div style="padding-top: 10px; padding-bottom:10px;" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="Content/images/urun7.png" class="img-responsive">
+            </div>
+
+            <div style="padding-top: 10px; padding-bottom:10px;" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="Content/images/urun8.png" class="img-responsive">
+            </div>
+
+            <div style="padding-top: 10px; padding-bottom:10px;" class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="Content/images/urun9.png" class="img-responsive">
             </div>
 
         </div>
