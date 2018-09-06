@@ -4,7 +4,7 @@
 
     <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
 
-        <div class="slider-parallax-inner">
+        <div>
 
             <div class="swiper-container swiper-parent">
                 <div class="swiper-wrapper">

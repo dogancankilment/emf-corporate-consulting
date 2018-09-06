@@ -6,11 +6,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Dogruyer_2\Documents\GitHub\emf-corporate-consulting\publish</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Dogruyer_2\Desktop\emf-corporate-consulting\publish</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="anasayfa.aspx">
-      <publishTime>09/06/2018 09:39:01</publishTime>
+      <publishTime>09/06/2018 16:47:23</publishTime>
     </File>
     <File Include="bayilerimiz.aspx">
       <publishTime>09/04/2018 17:57:33</publishTime>
@@ -25,7 +25,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/04/2018 17:54:42</publishTime>
     </File>
     <File Include="bin/EMF.dll">
-      <publishTime>09/06/2018 13:27:41</publishTime>
+      <publishTime>09/06/2018 16:48:58</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
       <publishTime>09/04/2018 17:54:42</publishTime>
@@ -1261,7 +1261,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/04/2018 17:54:42</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>09/06/2018 09:39:01</publishTime>
+      <publishTime>09/06/2018 16:47:30</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>09/04/2018 17:54:42</publishTime>
