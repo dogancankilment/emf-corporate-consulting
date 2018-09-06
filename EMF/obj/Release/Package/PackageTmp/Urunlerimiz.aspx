@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="separator clear-left">                                     
                                         <p class="btn-details">
-                                          <a href="<%# "UrunDetay.aspx?postquestion="+ Eval("id") %>" class="hidden-sm">More details</a></p>
+                                          <a href="<%# "UrunDetay.aspx?postquestion="+ Eval("id") %>" class="hidden-sm">Daha Fazla</a></p>
                                     </div>
                                     <div class="clearfix">
                                     </div>

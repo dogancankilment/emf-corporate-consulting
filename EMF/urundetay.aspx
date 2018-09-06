@@ -37,7 +37,7 @@
                                             <ItemTemplate>
                                                   
                                                 <a href="<%#"/Content/images/"+Eval("image_url") %>">
-                                                    <img src="<%#"/Content/images/"+Eval("image_url") %>" width="150" height="150">
+                                                    <img src="<%#"/Content/images/"+Eval("image_url") %>" style="padding:10px" width="150" height="150">
                                                 
                                             </ItemTemplate>
                                         </asp:ListView>

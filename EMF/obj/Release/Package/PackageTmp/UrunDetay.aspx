@@ -32,12 +32,12 @@
                                 
                                 <div class="col-md-12" style="margin-bottom:25px;">
                                
-                               
+                                  
                                         <asp:ListView ID="ListView1" runat="server" OnPreRender="ListView1_PreRender" DataSourceID="SqlDataSource2">
                                             <ItemTemplate>
                                                   
                                                 <a href="<%#"/Content/images/"+Eval("image_url") %>">
-                                                    <img src="<%#"/Content/images/"+Eval("image_url") %>" width="150" height="150">
+                                                    <img src="<%#"/Content/images/"+Eval("image_url") %>" style="padding:10px" width="150" height="150">
                                                 
                                             </ItemTemplate>
                                         </asp:ListView>
