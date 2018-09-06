@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     	<meta name="viewport" content="width=device-width, initial-scale=1" />    	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
-    <title><%: Page.Title %> - EMF Fren ve Kavrama Sistemleri</title>
+    <title><%: Page.Title %> EMF Fren ve Kavrama Sistemleri</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/images/emf.png" rel="shortcut icon" type="image/png" />
     <link type="text/css" href="Content/bootstrap.css" rel="stylesheet" />
     <link type="text/css" href="Content/style.css" rel="stylesheet" />
     <link type="text/css" href="Content/css/swiper.css" rel="stylesheet" />
@@ -50,57 +50,7 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
-
-
-		<!-- Header
-		============================================= -->
-		  <%--<header id="header" class="transparent-header full-header dark">
-
-			<div id="header-wrap">
-
-				<div class="container clearfix">
-
-					<div id="primary-menu-trigger"> <i class="icon-reorder"></i></div>
-
-                   
-
-					<!-- Logo
-					============================================= -->
-					<div id="logo">
-						<a href="Default.aspx" class="standard-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
-						<a href="Default.aspx" class="retina-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
-					</div><!-- #logo end -->
-
-					<!-- Primary Navigation
-					============================================= -->
-					<nav id="primary-menu">
-
-						<ul>
-							<li><a href="Default.aspx">ANASAYFA</a>
-							</li>
-							<li><a href="About.aspx">HAKKIMIZDA</a>
-								<ul style="border-top-color: white;">
-									<li><a href="About.aspx">TARİHÇEMİZ</a></li>
-									<li><a href="MisyonVizyon.aspx">MİSYON-VİZYON</a></li>
-									<li><a href="Sertifikalarimiz.aspx">SERTİFİKALARIMIZ</a></li>
-								</ul>
-							</li>
-							<li class="mega-menu"><a href="Urunlerimiz.aspx"><div>ÜRÜNLERİMİZ</div></a></li>
-							<li class="mega-menu"><a href="Bayilerimiz.aspx"><div>BAYİLERİMİZ</div></a></li>
-							<li class="mega-menu"><a href="Galeri.aspx"><div>GALERİ</div></a></li>
-							<li><a href="Iletisim.aspx"><div>İLETİŞİM</div></a></li>
-						</ul>
-
-					</nav><!-- #primary-menu end -->
-
-				</div>
-
-			</div>
-
-
-
-		</header>--%><!-- #header end -->        <header id="header" class="sticky-style-2">
+        <header id="header" class="sticky-style-2">
 
 			<div class="container clearfix" style="margin-bottom: 10px;">
 
@@ -110,18 +60,6 @@
 						<a href="/" class="standard-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
 						<a href="/" class="retina-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
-
-<%--                    <div class="row" style="float:right;">
-                        <div class="column">
-                             <img src="Content/images/envelope.jpeg" style="width:20px;" />
-                        </div>
-                    </div>
-
-                     <div class="row" style="float:right;">
-                        <div class="column">      
-                            <img src="Content/images/phone.jpeg" style="width:20px;" />
-                         </div>
-                    </div>--%>
 
                 <div class="col-sm-4 pull-right ustaramayer ">
                     <div class="col-sm-12">
@@ -302,22 +240,6 @@
         </div>
 
     </form>
-
-
-<%--    <script>
-        $(window).scroll(function () {
-            var sticky = $('#header'),
-              scroll = $(window).scrollTop();
-
-            if (scroll >= 40) {
-                sticky.addClass('fixed');
-            }
-            else {
-                sticky.removeClass('fixed');
-
-            }
-        });
-    </script>--%>
 </div>
 
     
