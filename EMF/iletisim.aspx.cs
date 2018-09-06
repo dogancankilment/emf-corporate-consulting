@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
 using System.Text;
+using System.Net;
+using System.Data;
 
 namespace EMF
 {
@@ -17,20 +19,20 @@ namespace EMF
         }
         protected void Btn_SendMail_Click(object sender, EventArgs e)
         {
-            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+            SmtpClient smtpClient = new SmtpClient("srvm07.trwww.com", 587);
             
             smtpClient.UseDefaultCredentials = false;
-            smtpClient.Credentials = new System.Net.NetworkCredential("surveydck@gmail.com", "10121993CAN");
+            smtpClient.Credentials = new System.Net.NetworkCredential("no-reply@dogruyer.com.tr", "123QWEasd");
             smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtpClient.EnableSsl = true;
             MailMessage mail = new MailMessage();
 
             //Setting From , To and CC
-            mail.From = new MailAddress("surveydck@gmail.com", "Test");
+            mail.From = new MailAddress("no-reply@dogruyer.com.tr", "Test");
             mail.To.Add(new MailAddress("yazilim@dogruyer.com.tr"));
             mail.CC.Add(new MailAddress("webyazilim@dogruyer.com.tr"));
-            mail.Body = txtad.Text + txtemail.Text + txttel.Text + txtBody.Text;
-            
+            mail.Body = "<strong>www.emffren.com sitesinden mesajınız var.</strong><br><strong>İsim: </strong> " + txtad.Text + "<br><strong>E-posta: </strong>" + txtemail.Text + "<br><strong>Telefon: </strong> " + txttel.Text + "<br> <strong> Mesaj: </strong> " + txtBody.Text;
+            mail.IsBodyHtml = true;
 
             smtpClient.Send(mail);
         }
