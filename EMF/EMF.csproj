@@ -107,6 +107,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\mary.jpg" />
     <Content Include="Default.aspx">
       <BrowseToURL>~/</BrowseToURL>
     </Content>

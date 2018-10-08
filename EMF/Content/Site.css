@@ -1,6 +1,5 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    margin-top: 45px;
 }
 
 /* Wrapping element */
@@ -138,8 +137,8 @@ blockquote p{
 }
 
 .center {
-    margin-top: 35px !important;
-    /*margin-left: 280px;*/
+    margin-top: 5px !important;
+    margin-left: 280px;
     font-size:12px !important;
 }
 hr {
@@ -151,7 +150,7 @@ h1{
 }
 
 #copyrights a {
-    background-color: grey !important;
+    /*background-color: grey !important;*/
     border-radius: 13px !important;
 }
 
