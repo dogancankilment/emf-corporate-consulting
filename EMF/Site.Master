@@ -88,6 +88,13 @@
                                     </li>
                                     <li><a href="urunlerimiz">
                                         <div>ÜRÜNLERİMİZ</div>
+                                         <ul>
+                                            <li><a href="#"><div>DOĞAL MIKNATISLI FREN SİSTEMİ</div></a></li>
+                                            <li><a href="#">AKIM BASKILI FREN VE KAVRAMA</a></li>   
+                                            <li><a href="#"><div>AKIM BASKILI TOZLU FREN VE KAVRAMA</div></a></li>
+                                            <li><a href="#"><div>YAY BASKILI FRENLER</div></a></li>  
+                                            <li><a href="#"><div>AKIM BASKILI FREN VE KAVRAM GRUBU</div></a></li>                                                                                    
+                                        </ul>
                                     </a></li>
                                     <li><a href="bayilerimiz">
                                         <div>BAYİLERİMİZ</div>
@@ -125,7 +132,7 @@
                 </asp:ContentPlaceHolder>
 
 
-                <footer style="margin-bottom: -20px; background-size: cover; background-image: url('Content/images/footer.jpeg'); margin-top:0 !important;">
+                <footer class="dark" style="margin-bottom: -20px; background-size: cover; background-image: url('Content/images/footer.jpeg'); margin-top:0 !important;">
 
                     <div class="container">
 
@@ -160,9 +167,9 @@
                                                 İkitelli / İSTANBUL<br>
                                             </address>
                                             <abbr><strong>Telefon:</strong></abbr>
-                                            0(212)671 47 97<br>
+                                            +90(212)671 47 97<br>
                                             <abbr><strong>Fax:</strong></abbr>
-                                            0(212)671 47 26<br>
+                                            +90(212)671 47 26<br>
                                             <abbr><strong>E-posta:</strong></abbr>
                                             emf@emffren.com.tr
                                         </div>
