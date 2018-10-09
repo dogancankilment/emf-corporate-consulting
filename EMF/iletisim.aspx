@@ -13,13 +13,37 @@
     <!-- #page-title end -->
                    <section class="content_block clearfix">
                         <section class="content full  clearfix">
-                            <div class="box one">
-                                <div class="box two">
-                                    <iframe class="z-index2" style="float: left !important; margin-bottom: 18px; border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.4241183939243!2d26.572536315749826!3d41.66818298650292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDQwJzA1LjQiTiAyNsKwMzQnMjkuMCJF!5e0!3m2!1str!2str!4v1467974044040" width="99%" height="320" frameborder="0"></iframe>
-                                    </div>
-                                <div class="box two">
-                                     <iframe class="z-index2" style="float: left !important; margin-bottom: 18px; border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.4241183939243!2d26.572536315749826!3d41.66818298650292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDQwJzA1LjQiTiAyNsKwMzQnMjkuMCJF!5e0!3m2!1str!2str!4v1467974044040" width="99%" height="320" frameborder="0"></iframe>
-                                    </div>
+                            <div class="container clearfix">
+                                <div class="col-md-5">
+                                    <iframe class="z-index2" style="float: left !important; margin-bottom: 18px; margin-top:40px; border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.4241183939243!2d26.572536315749826!3d41.66818298650292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDQwJzA1LjQiTiAyNsKwMzQnMjkuMCJF!5e0!3m2!1str!2str!4v1467974044040" width="99%" height="320" frameborder="0"></iframe>
+                                      <h1 align="center" class="featured_article_title">Şube1</h1>
+                                    <div class="space margin-b20"></div>
+                                    <ul class="with_icons default " data-rt-animation-group="group">
+                                        <li class="box one first last" data-rt-animate="animate" data-rt-animation-type="fadeInDown"><span class="icon-home icon"></span>
+                                            <p>Trakya Üniversitesi EDİRNE</p>
+                                        </li>
+                                        <li class="box one first last" data-rt-animate="animate" data-rt-animation-type="fadeInDown"><span class="icon-phone-squared icon"></span>
+                                            <p>+90(212)671 47 26</p>
+                                        </li>
+                                        <li class="box one first last" data-rt-animate="animate" data-rt-animation-type="fadeInDown"><span class="icon-mail icon"></span>
+                                            <p>merhaba@emf.com.tr</p>
+                                        </li>
+                                </div>
+                                <div class="col-md-5" style="margin-left:100px">
+                                     <iframe class="z-index2" style="float: left !important; margin-bottom: 18px; margin-top:40px; border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.4241183939243!2d26.572536315749826!3d41.66818298650292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDQwJzA1LjQiTiAyNsKwMzQnMjkuMCJF!5e0!3m2!1str!2str!4v1467974044040" width="99%" height="320" frameborder="0"></iframe>
+                                      <h1 align="center" class="featured_article_title">Şube2</h1>
+                                    <div class="space margin-b20"></div>
+                                    <ul class="with_icons default " data-rt-animation-group="group">
+                                        <li class="box one first last" data-rt-animate="animate" data-rt-animation-type="fadeInDown"><span class="icon-home icon"></span>
+                                            <p>Trakya Üniversitesi EDİRNE</p>
+                                        </li>
+                                        <li class="box one first last" data-rt-animate="animate" data-rt-animation-type="fadeInDown"><span class="icon-phone-squared icon"></span>
+                                            <p>+90(212)671 47 97</p>
+                                        </li>
+                                        <li class="box one first last" data-rt-animate="animate" data-rt-animation-type="fadeInDown"><span class="icon-mail icon"></span>
+                                            <p>merhaba@emf.com.tr</p>
+                                        </li>
+                                </div>
                             </div>
                             </section>
                      </section>
@@ -64,7 +88,7 @@
                             <div class="clear"></div>
                             <div class="col_full">
                                 <label for="template-contactform-message">Mesaj <small>*</small></label>
-                                <asp:TextBox TextMode="MultiLine" ID="txtBody" runat="server" Rows="6" CssClass="required sm-form-control" /><br>
+                                <asp:TextBox TextMode="MultiLine" ID="txtBody" runat="server" Rows="6" Columns="16" CssClass="required sm-form-control" /><br>
                             </div>
 
                             <div class="col_full hidden">
@@ -91,9 +115,9 @@
                         İkitelli / İSTANBUL<br>
                     </address>
                     <abbr><strong>Telefon:</strong></abbr>
-                    0(212)671 47 97<br>
+                    +90(212)671 47 97<br>
                     <abbr><strong>Fax:</strong></abbr>
-                    0(212)671 47 26<br>
+                    +90(212)671 47 26<br>
                     <abbr><strong>E-posta:</strong></abbr>
                     emf@emffren.com.tr
 

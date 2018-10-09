@@ -13,15 +13,6 @@ namespace EMF {
     public partial class UrunDetay {
         
         /// <summary>
-        /// SqlDataSource2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
-        
-        /// <summary>
         /// urunbaslik control.
         /// </summary>
         /// <remarks>
@@ -31,13 +22,13 @@ namespace EMF {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl urunbaslik;
         
         /// <summary>
-        /// urunicerik control.
+        /// SqlDataSource2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl urunicerik;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
         
         /// <summary>
         /// habercokluresim control.
@@ -56,5 +47,14 @@ namespace EMF {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView ListView1;
+        
+        /// <summary>
+        /// urunicerik control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl urunicerik;
     }
 }

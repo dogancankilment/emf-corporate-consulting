@@ -107,10 +107,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\all.css" />
+    <Content Include="Content\images\dislilogo.jpg" />
     <Content Include="Content\images\mary.jpg" />
-    <Content Include="Default.aspx">
-      <BrowseToURL>~/</BrowseToURL>
-    </Content>
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\jquery.min.js" />
     <Content Include="hakkimizda.aspx">
       <BrowseToURL>~/hakkimizda.aspx</BrowseToURL>
     </Content>
@@ -580,13 +581,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="hakkimizda.aspx.cs">
       <DependentUpon>hakkimizda.aspx</DependentUpon>

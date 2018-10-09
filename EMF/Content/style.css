@@ -9162,7 +9162,7 @@ ul.tab-nav:not(.tab-nav-lg) li a {
 	padding: 0 15px;
 	color: #444;
 	height: 40px;
-	line-height: 40px;
+	/*line-height: 40px;*/
 	background-color: #F2F2F2;
 	font-size: 14px;
 	font-weight: bold;
