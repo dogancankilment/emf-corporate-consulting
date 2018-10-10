@@ -1036,7 +1036,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark #copyrights i.footer-icon { color: rgba(255,255,255,0.3); }
 
 .dark .copyright-links a {
-	color: rgba(255,255,255,0.25);
+	color: rgb(255,255,255);
 	border-bottom-color: rgba(255,255,255,0.25);
 }
 

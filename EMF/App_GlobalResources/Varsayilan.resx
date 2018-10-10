@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="adiniz_soyadiniz" xml:space="preserve">
+    <value>Adınız ve Soyadınız..</value>
+  </data>
+  <data name="adres" xml:space="preserve">
+    <value>ADRES</value>
+  </data>
+  <data name="alt_kategori_1" xml:space="preserve">
+    <value>1.Alt Kategori</value>
+  </data>
+  <data name="alt_kategori_2" xml:space="preserve">
+    <value>2.Alt Kategori</value>
+  </data>
+  <data name="alt_kategori_3" xml:space="preserve">
+    <value>3.Alt Kategori</value>
+  </data>
+  <data name="anasayfa" xml:space="preserve">
+    <value>Anasayfa</value>
+  </data>
+  <data name="ana_kategori" xml:space="preserve">
+    <value>Ana Kategori</value>
+  </data>
+  <data name="arama_alani_mesaj" xml:space="preserve">
+    <value>Arama Alanını Doldurunuz..</value>
+  </data>
+  <data name="arama_kriteri" xml:space="preserve">
+    <value>Arama Kriterleri</value>
+  </data>
+  <data name="aranacak_kelime" xml:space="preserve">
+    <value>Aranacak Kelime</value>
+  </data>
+  <data name="basarili_ozgecmis_mesaj" xml:space="preserve">
+    <value>Özgeçmişiniz başarılı şekilde sisteme kaydedilmiştir..</value>
+  </data>
+  <data name="basarisiz_ozgecmis_mesaj" xml:space="preserve">
+    <value>Özgeçmişiniz alınırken bir sorun oluştu. Lütfen tekrar Deneyiniz..</value>
+  </data>
+  <data name="belgelerimiz" xml:space="preserve">
+    <value>BELGELERİMİZ</value>
+  </data>
+  <data name="bizden_haberler" xml:space="preserve">
+    <value>Bizden Haberler</value>
+  </data>
+  <data name="bize_ulasin" xml:space="preserve">
+    <value>Bize Ulaşın</value>
+  </data>
+  <data name="cv_dosyaniz" xml:space="preserve">
+    <value>dosyanız..</value>
+  </data>
+  <data name="cv_hata_mesaj" xml:space="preserve">
+    <value>Lütfen Cv dosyanızı yükleyiniz.</value>
+  </data>
+  <data name="duyurular" xml:space="preserve">
+    <value>DUYURULAR</value>
+  </data>
+  <data name="e_posta" xml:space="preserve">
+    <value>E-POSTA</value>
+  </data>
+  <data name="e_posta_adres" xml:space="preserve">
+    <value>E-posta Adresiniz..</value>
+  </data>
+  <data name="haberler" xml:space="preserve">
+    <value>HABERLER</value>
+  </data>
+  <data name="haberlerimiz" xml:space="preserve">
+    <value>Haberlerimiz</value>
+  </data>
+  <data name="haber_detay" xml:space="preserve">
+    <value>Haber Detay</value>
+  </data>
+  <data name="haber_resimleri" xml:space="preserve">
+    <value>Haber Resimleri</value>
+  </data>
+  <data name="hakkimizda" xml:space="preserve">
+    <value>HAKKIMIZDA</value>
+  </data>
+  <data name="haritada_yerimiz" xml:space="preserve">
+    <value>HARİTADA YERİMİZ</value>
+  </data>
+  <data name="iletisim" xml:space="preserve">
+    <value>İLETİŞİM</value>
+  </data>
+  <data name="iletisim_ad_hata_mesaj" xml:space="preserve">
+    <value>Lütfen kullanıcı adınızı yazınız.</value>
+  </data>
+  <data name="iletisim_basarili" xml:space="preserve">
+    <value>Mesajınız başarılı bir şekilde gönderilmiştir..</value>
+  </data>
+  <data name="iletisim_basarisiz" xml:space="preserve">
+    <value>Mesajınız gönderilememiştir. Lütfen tekrar deneyiniz..</value>
+  </data>
+  <data name="iletisim_gecerli_mail_hata_mesaj" xml:space="preserve">
+    <value>Lütfen geçerli bir mail adresi yazınız..</value>
+  </data>
+  <data name="iletisim_mail_hata_mesaj" xml:space="preserve">
+    <value>Lütfen mail adresinizi yazınız.</value>
+  </data>
+  <data name="iletisim_mesaj_hata_mesaj" xml:space="preserve">
+    <value>Lütfen mesajınızı Yazınız...</value>
+  </data>
+  <data name="iletisim_telefon_hata_mesaj" xml:space="preserve">
+    <value>Lütfen telefon numaranızı yazınız...</value>
+  </data>
+  <data name="insan_kaynaklari" xml:space="preserve">
+    <value>İnsan Kaynakları</value>
+  </data>
+  <data name="kapat" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="katalog_ara" xml:space="preserve">
+    <value>Katalog Ara</value>
+  </data>
+  <data name="katalog_arama_sonuc" xml:space="preserve">
+    <value>Katalog Arama Sonuçları</value>
+  </data>
+  <data name="kullanici_ad_bosluk_hata" xml:space="preserve">
+    <value>Lütfen kullanıcı adınızı yazınız.</value>
+  </data>
+  <data name="kurumsal" xml:space="preserve">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="list_urun_kategori" xml:space="preserve">
+    <value>Listelenecek Ürün Kategorisi</value>
+  </data>
+  <data name="mesajiniz" xml:space="preserve">
+    <value>Mesajınız..</value>
+  </data>
+  <data name="misyonumuz" xml:space="preserve">
+    <value>MİSYONUMUZ</value>
+  </data>
+  <data name="ozgecmis_gonder" xml:space="preserve">
+    <value>Özgeçmişinizi Gönderin</value>
+  </data>
+  <data name="son_haberler" xml:space="preserve">
+    <value>Son Haberler</value>
+  </data>
+  <data name="tarihcemiz" xml:space="preserve">
+    <value>TARİHÇEMİZ</value>
+  </data>
+  <data name="teknik_katalog" xml:space="preserve">
+    <value>TEKNİK KATALOGLAR</value>
+  </data>
+  <data name="telefon" xml:space="preserve">
+    <value>Telefonunuz..</value>
+  </data>
+  <data name="tum_duyurular" xml:space="preserve">
+    <value>Tüm Duyurular</value>
+  </data>
+  <data name="tum_haberler" xml:space="preserve">
+    <value>Tüm Haberler</value>
+  </data>
+  <data name="tum_videolari_gor" xml:space="preserve">
+    <value>Tüm Videoları Gör</value>
+  </data>
+  <data name="urunler" xml:space="preserve">
+    <value>ÜRÜNLER</value>
+  </data>
+  <data name="urunlerimiz" xml:space="preserve">
+    <value>Ürünlerimiz</value>
+  </data>
+  <data name="urun_ara" xml:space="preserve">
+    <value>Bir ürün arayın..</value>
+  </data>
+  <data name="urun_arama_sonuc" xml:space="preserve">
+    <value>Ürün Arama Sonuçları</value>
+  </data>
+  <data name="urun_ara_btn" xml:space="preserve">
+    <value>Ürün Ara</value>
+  </data>
+  <data name="urun_detay" xml:space="preserve">
+    <value>Ürün Detay</value>
+  </data>
+  <data name="urun_kategorileri" xml:space="preserve">
+    <value>ÜRÜN KATEGORİLERİ</value>
+  </data>
+  <data name="urun_resimler" xml:space="preserve">
+    <value>Ürün Resimleri</value>
+  </data>
+  <data name="vizyonumuz" xml:space="preserve">
+    <value>VİZYONUMUZ</value>
+  </data>
+  <data name="yanlis_dosya_mesaj" xml:space="preserve">
+    <value> Yanlış Dosya Türü! Özgeçmişiniz için jpg,png,jpeg,doc,docx,pdf formatları geçerlidir.Lütfen bu tür dosyalar yükleyiniz.. </value>
+  </data>
+  <data name="youtube_kanalimiz" xml:space="preserve">
+    <value>Youtube Kanalımız</value>
+  </data>
+  <data name="detay" xml:space="preserve">
+    <value>Detay</value>
+  </data>
+  <data name="gonder" xml:space="preserve">
+    <value>Gönder</value>
+  </data>
+  <data name="menu_bizden_haberler" xml:space="preserve">
+    <value>BİZDEN HABERLER</value>
+  </data>
+  <data name="tumu" xml:space="preserve">
+    <value>Tümü</value>
+  </data>
+  <data name="detayli_incele" xml:space="preserve">
+    <value>Detay</value>
+  </data>
+  <data name="urun_katalog" xml:space="preserve">
+    <value>Ürün Katalogları</value>
+  </data>
+  <data name="urun_bulunamadi_resim" xml:space="preserve">
+    <value>yst-reduktor-urun-bulunamadi.png</value>
+  </data>
+  <data name="videolarimiz" xml:space="preserve">
+    <value>Videolarımız</value>
+  </data>
+  <data name="yst_turk_ofis" xml:space="preserve">
+    <value>Y&lt;span&gt;S&lt;/span&gt;T Türkiye Ofis</value>
+  </data>
+  <data name="e_katalog_goruntule" xml:space="preserve">
+    <value>Genel E-katalog Görüntüle</value>
+  </data>
+  <data name="markalarimiz" xml:space="preserve">
+    <value>MARKALARIMIZ</value>
+  </data>
+  <data name="aciklamasi" xml:space="preserve">
+    <value>Açıklaması</value>
+  </data>
+  <data name="dokumanlar_pdf" xml:space="preserve">
+    <value>Dokümanlar (Pdf)</value>
+  </data>
+  <data name="resimleri" xml:space="preserve">
+    <value>Resimleri</value>
+  </data>
+  <data name="urun_dokuman_yuklenmedi" xml:space="preserve">
+    <value>Ürün kataloğu için firmamızla iletişime geçiniz..</value>
+  </data>
+  <data name="urun_kodu" xml:space="preserve">
+    <value>Ürün Kodu</value>
+  </data>
+  <data name="urun_resim_yuklenmedi" xml:space="preserve">
+    <value>Bu ürün için henüz resim yüklenmemiştir.</value>
+  </data>
+  <data name="olculer_teknik_katalog" xml:space="preserve">
+    <value>Ölçüler - Teknik Katalog</value>
+  </data>
+  <data name="ozellikler" xml:space="preserve">
+    <value>Özellikler</value>
+  </data>
+  <data name="resim_galerisi" xml:space="preserve">
+    <value>Resim Galerisi</value>
+  </data>
+  <data name="pdf_goruntulue" xml:space="preserve">
+    <value>Pdf Görüntüle</value>
+  </data>
+  <data name="pdf_indir" xml:space="preserve">
+    <value>Pdf İndir</value>
+  </data>
+  <data name="fan_e_katalog_goruntule" xml:space="preserve">
+    <value>Fan E-katalog Görüntüle</value>
+  </data>
+  <data name="motor_e_katalog_goruntule" xml:space="preserve">
+    <value>Elektrik Motorları E-katalog Görüntüle</value>
+  </data>
+  <data name="pompa_e_katalog_goruntule" xml:space="preserve">
+    <value>Pompa E-katalog Görüntüle</value>
+  </data>
+  <data name="reduktor_e_katalog_goruntule" xml:space="preserve">
+    <value>Redüktör E-katalog Görüntüle</value>
+  </data>
+</root>

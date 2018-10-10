@@ -6,15 +6,14 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    	<meta name="viewport" content="width=device-width, initial-scale=1" />    	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="SemiColonWeb" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
     <title><%: Page.Title %> EMF Fren ve Kavrama Sistemleri</title>
 
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
     <link href="Content/images/emf.png" rel="shortcut icon" type="image/png" />
     <link type="text/css" href="Content/bootstrap.css" rel="stylesheet" />
     <link type="text/css" href="Content/style.css" rel="stylesheet" />
@@ -25,226 +24,278 @@
     <link type="text/css" href="Content/css/magnific-popup.css" rel="stylesheet" />
     <link type="text/css" href="Content/css/responsive.css" rel="stylesheet" />
     <link type="text/css" href="Content/Site.css" rel="stylesheet" />
+    <link type="text/css" href="Content/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="Content/all.css" rel="stylesheet">
+    <link type="text/css" href="Content/css/animate.min.css" rel="stylesheet">
+    <link type="text/css" href="Content/css/bootstrap-select.min.css" rel="stylesheet">
+    <link type="text/css" href="Content/css/flag-icon.css" rel="stylesheet">
+    <link type="text/css" href="Content/css/flag-icon.min.css" rel="stylesheet">
+    <link type="text/css" href="Content/css/site.css" rel="stylesheet">
+    <style>
+        .form-control-borderless {
+            border: none;
+        }
+
+            .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+    </style>
+
 
 </head>
-<body class="stretched" style=" overflow-x: hidden;">
-   <div id="wrapper" class="clearfix">
-    <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="respond" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
-        <header id="header" class="sticky-style-2">
+<body class="stretched" style="overflow-x: hidden;">
+        <div id="wrapper" class="clearfix">
 
-			<div class="container clearfix" style="margin-bottom: 10px;">
-
-				<!-- Logo
+               <form runat="server">
+            <header id="header" class="sticky-style">
+                <div id="header-wrap">
+                    <div class="clearfix">
+                        <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+                        <!-- Primary Navigation
 				============================================= -->
-					<div id="logo">
-						<a href="/" class="standard-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
-						<a href="/" class="retina-logo" data-dark-logo="Content/emf_1.png"><img src="Content/emf_1.png" alt="Canvas Logo"></a>
-					</div><!-- #logo end -->
+                        <nav id="primary-menu" class="style-2" style="background-image: url('Content/images/header.jpeg')">
+                            <div class="row">
+                                <ul>
+                                    <li>
+                                        <!-- Logo
+				============================================= -->
+                                        <div id="logo" style="width: 100px; height: 50px;">
+                                            <a href="/" class="standard-logo" data-dark-logo="Content/emf_1.png">
+                                                <img src="Content/emf_1.png" alt="Canvas Logo"></a>
+                                            <a href="/" class="retina-logo" data-dark-logo="Content/emf_1.png">
+                                                <img src="Content/emf_1.png" alt="Canvas Logo"></a>
+                                        </div>
+                                        <!-- #logo end -->
+                                    </li>
 
-                <div class="col-sm-4 pull-right ustaramayer ">
-                    <div class="col-sm-12">
-                        <div class="row">
-                        <div class="row col-md-6" style="padding-left:10px; line-height: 50px; text-align:center;">
-                             <dt><span>İLETİŞİM</span></dt>
-                                <img src="Content/images/we-are-here.png" style="width:20px;" />
-                                <dd><strong>0(212)671 47 97</strong></dd>                            
+                                    <li><a href="anasayfa">ANASAYFA</a>
+                                    </li>
+                                    <li><a href="hakkimizda">HAKKIMIZDA</a>
+                                    </li>
+                                    <li><a href="urunlerimiz">
+                                        <div>ÜRÜNLERİMİZ</div>
+                                        <ul>
+                                            <li><a href="#">
+                                                <div>DOĞAL MIKNATISLI FREN SİSTEMİ</div>
+                                            </a></li>
+                                            <li><a href="#">AKIM BASKILI FREN VE KAVRAMA</a></li>
+                                            <li><a href="#">
+                                                <div>AKIM BASKILI TOZLU FREN VE KAVRAMA</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>YAY BASKILI FRENLER</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>AKIM BASKILI FREN VE KAVRAM GRUBU</div>
+                                            </a></li>
+                                        </ul>
+                                    </a></li>
+                                    <li><a href="bayilerimiz">
+                                        <div>BAYİLERİMİZ</div>
+                                    </a></li>
+                                    <li><a href="galeri">
+                                        <div>GALERİ</div>
+                                    </a></li>
+                                    <li><a href="iletisim">
+                                        <div>İLETİŞİM</div>
+                                    </a></li>
+                                    <li><a href="dokuman">DÖKÜMANLAR</a>
+                                        <ul>
+                                            <li><a href="hakkimizda">
+                                                <div>SERTİFİKALARIMIZ</div>
+                                            </a></li>
+                                            <li><a href="misyonvizyon">KATALOGLAR</a>
+                                                <ul>
+                                                    <li><a href="hakkimizda">
+                                                        <div>TEKNİK ÇİZİM</div>
+                                                    </a></li>
+                                                    <li><a href="misyonvizyon">TEKNİK DATA</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                        <div class="row col-md-6" style="padding-left:10px; line-height: 50px; text-align:center;">
-                            <span class="c-font-black">
-                                <dt><span>MAİL ADRES</span></dt>
-                                <img src="Content/images/call-us-on.png" style="width:20px;" />
-                               <dd> <strong>emf@emffren.com.tr</strong></dd>
-                            </span>
-                        </div>
+                             <div class="form-group ustdil margintop-10 marginleft10 pull-right">
+                                <asp:DropDownList runat="server" ID="drpDil" CssClass="selectpicker" data-width="fit" AutoPostBack="true" OnSelectedIndexChanged="drpDil_SelectedIndexChanged" OnPreRender="drpDil_PreRender">
+                                    <asp:ListItem Value="tr-TR" data-content='<span class="flag-icon flag-icon-tr"></span>'></asp:ListItem>
+                                    <asp:ListItem Value="en-US" data-content='<span class="flag-icon flag-icon-gb"></span>'></asp:ListItem>
+                                </asp:DropDownList>
                             </div>
+                            <div class="container">
+                                <br />
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-10 col-lg-8">
+                                        <div class="card card-sm">
+                                            <div class="card-body row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <i class="fas fa-search h4 text-body"></i>
+                                                </div>
+                                                <!--end of col-->
+                                                <div class="col">
+                                                    <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Ürün Adı Giriniz...">
+                                                </div>
+                                                <!--end of col-->
+                                                <div class="col-auto">
+                                                    <button class="btn btn-lg btn-success" type="submit">Ara</button>
+                                                </div>
+                                                <!--end of col-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </div>
+                           
+                        </nav>
+
                     </div>
+
                 </div>
 
-
+            </header>
+            <!-- #header end -->
 
-			</div>
 
-			<div id="header-wrap">
 
-				<!-- Primary Navigation
-				============================================= -->
-				<nav id="primary-menu" class="style-2" style="background-image:url('Content/images/header.jpeg')" >
-
-					<div class="container clearfix">
-
-						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-						<ul>
-							<li><a href="/">ANASAYFA</a>
-							</li>
-							<li><a href="hakkimizda">HAKKIMIZDA</a>
-								<ul style="border-top-color: white;">
-									<li><a href="hakkimizda">TARİHÇEMİZ</a></li>
-									<li><a href="misyonvizyon">MİSYON-VİZYON</a></li>
-									<li><a href="sertifikalarimiz">SERTİFİKALARIMIZ</a></li>
-								</ul>
-							</li>
-							<li ><a href="urunlerimiz"><div>ÜRÜNLERİMİZ</div></a></li>
-							<li ><a href="bayilerimiz"><div>BAYİLERİMİZ</div></a></li>
-							<li ><a href="galeri"><div>GALERİ</div></a></li>
-							<li><a href="iletisim"><div>İLETİŞİM</div></a></li>
-						</ul>
-
-					</div>
-
-				</nav><!-- #primary-menu end -->
-
-			</div>
-
-		</header><!-- #header end -->
-
-
-        <div class="container_fullwidth">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
 
 
-           <footer id="footer" class="dark" style="margin-bottom: -20px; background-size: cover; background-image:url('Content/images/footer.jpeg') ">
+            <footer class="dark" style="margin-bottom: -20px; background-size: cover; background-image: url('Content/images/footer.jpeg'); margin-top: 0 !important;">
 
-			<div class="container">
+                <div class="container">
 
-				<!-- Footer Widgets
+                    <!-- Footer Widgets
 				============================================= -->
-				<div class="footer-widgets-wrap clearfix">
+                    <div class="footer-widgets-wrap clearfix">
 
-					<div class="row">
+                        <div class="row">
+                            <div class="center">
 
-						<div class="col-md-4">
+                                <div class="col-md-6">
 
-							<div class="widget widget_links clearfix" style="text-align:center;">
+                                    <div class="widget widget_links clearfix" style="text-align: center;">
 
-								<h4>ÜRÜN KATEGORİLERİ</h4>
+                                        <h4>ÜRÜN KATEGORİLERİ</h4>
 
-								<ul>
-									<li><a href="#">Yay Baskılı Frenler</a></li>
-									<li><a href="#">Akım Baskılı Fren ve Kavrama</a></li>
-									<li><a href="#">Akım Baskılı Tozlu Fren ve Kavrama</a></li>
-									<li><a href="#">Akım Baskılı Fren ve Kavrama Grubu</a></li>
-									<li><a href="#">Permag</a></li>
-								</ul>
-
-							</div>
-
-						</div>
-
-
-						<div class="col-md-4">
-
-							<div class="widget clearfix">
-
-								<h4>HARİTADA YERİMİZ</h4>
-                                
-                                <iframe width="100%" height="75" frameborder="0" style="border: 0;height: 220px; padding-bottom: 20px;"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.9938179059604!2d28.798398915129848!3d41.069127779294625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa5906fb866ff%3A0x9fbfe6c222412a69!2sZiya+G%C3%B6kalp+Mahallesi%2C+5A+Block+No%3A54%2C+34490+%C4%B0kitelli+Osb%2FBa%C5%9Fak%C5%9Fehir%2FIstanbul!5e0!3m2!1str!2str!4v1503742226162"
-                                allowfullscreen></iframe>
-
-							</div>
-
-						</div>
-
-                        <div class="col-md-4">
-
-							<div class="widget clearfix" style="text-align:center;">
-
-                                <h4>BİZE ULAŞIN</h4>
-
-									<address>
-										<strong>Adres:</strong><br>
-										Metal İş Sanayi Sitesi 12. Blok No:7-9<br>
-										İkitelli / İSTANBUL<br>
-									</address>
-									<abbr><strong>Telefon:</strong></abbr> 0(212)671 47 97<br>
-									<abbr><strong>Fax:</strong></abbr> 0(212)671 47 26<br>
-									<abbr><strong>E-posta:</strong></abbr> emf@emffren.com.tr
-
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div><!-- .footer-widgets-wrap end -->
-
-			</div>
-
-			<!-- Copyrights
+                                        <ul>
+                                            <li><a href="#">Yay Baskılı Frenler</a></li>
+                                            <li><a href="#">Akım Baskılı Fren ve Kavrama</a></li>
+                                            <li><a href="#">Akım Baskılı Tozlu Fren ve Kavrama</a></li>
+                                            <li><a href="#">Akım Baskılı Fren ve Kavrama Grubu</a></li>
+                                            <li><a href="#">Permag</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="widget clearfix" style="text-align: center;">
+                                        <h4>BİZE ULAŞIN</h4>
+                                        <address>
+                                            <strong>Adres:</strong><br>
+                                            Metal İş Sanayi Sitesi 12. Blok No:7-9<br>
+                                            İkitelli / İSTANBUL<br>
+                                        </address>
+                                        <abbr><strong>Telefon:</strong></abbr>
+                                        +90(212)671 47 97<br>
+                                        <abbr><strong>Fax:</strong></abbr>
+                                        +90(212)671 47 26<br>
+                                        <abbr><strong>E-posta:</strong></abbr>
+                                        emf@emffren.com.tr
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .footer-widgets-wrap end -->
+                </div>
+                <!-- Copyrights
 			============================================= -->
-			<div id="copyrights" style="padding-top: 5px; padding-bottom: 5px; background-image:url('Content/images/copy.jpeg')">
+                <div id="copyrights" style="padding-top: 5px; padding-bottom: 5px; background-image: url('Content/images/copy.jpeg')">
 
-				<div class="container clearfix">
+                    <div class="container clearfix">
 
-					<div class="col-md-10" style="color:white;">
-						Copyrights &copy; 2018 All Rights Reserved by Dogruyer<br>
-					</div>
+                        <div class="col-md-4" style="color: white;">
+                            Copyrights &copy; 2018 All Rights Reserved by Dogruyer<br>
+                        </div>
+                        <div class="copyrights-menu copyright-links col-md-6" style="color: white">
+                            <a href="anasayfa.aspx">Anasayfa</a>/<a href="hakkımızda.aspx">Hakkımızda</a>/<a href="Urunlerimiz.aspx">Ürünlerimiz</a>/<a href="bayilerimiz.aspx">Bayilerimiz</a>/<a href="galeri.aspx">Galeri</a>/<a href="Iletisim.aspx">İletişim</a>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="widget noborder notoppadding">
 
-					<div class="col-md-2">
-						<div class="widget noborder notoppadding">
+                                <a href="#" class="social-icon si-small si-dark si-facebook">
+                                    <i class="icon-facebook"></i>
+                                    <i class="icon-facebook"></i>
+                                </a>
 
-							<a href="#" class="social-icon si-small si-dark si-facebook">
-								<i class="icon-facebook"></i>
-								<i class="icon-facebook"></i>
-							</a>
+                                <a href="#" class="social-icon si-small si-dark si-twitter">
+                                    <i class="icon-twitter"></i>
+                                    <i class="icon-twitter"></i>
+                                </a>
 
-							<a href="#" class="social-icon si-small si-dark si-twitter">
-								<i class="icon-twitter"></i>
-								<i class="icon-twitter"></i>
-							</a>
+                                <a href="#" class="social-icon si-small si-dark si-instagram">
+                                    <i class="icon-instagram"></i>
+                                    <i class="icon-instagram"></i>
+                                </a>
 
-                            <a href="#" class="social-icon si-small si-dark si-instagram">
-								<i class="icon-instagram"></i>
-								<i class="icon-instagram"></i>
-							</a>
+                                <a href="#" class="social-icon si-small si-dark si-youtube">
+                                    <i class="icon-youtube"></i>
+                                    <i class="icon-youtube"></i>
+                                </a>
 
-                            <a href="#" class="social-icon si-small si-dark si-youtube">
-								<i class="icon-youtube"></i>
-								<i class="icon-youtube"></i>
-							</a>
+                            </div>
 
-						</div>
+                            <div class="clear"></div>
+                        </div>
 
-						<div class="clear"></div>
-					</div>
+                    </div>
 
-				</div>
+                </div>
+                <!-- #copyrights end -->
 
-			</div><!-- #copyrights end -->
-
-		</footer><!-- #footer end -->
-
+            </footer>
+            <!-- #footer end -->
+                       </form>
         </div>
 
-    </form>
-</div>
 
-    
+    <script type="text/javascript">
+
+        jQuery('#google-map').gMap({
+            address: 'Melbourne, Australia',
+            maptype: 'ROADMAP',
+            zoom: 14,
+            markers: [
+				{
+				    address: "Melbourne, Australia",
+				    html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;">Hi, we\'re <span>Envato</span></h4><p class="nobottommargin">Our mission is to help people to <strong>earn</strong> and to <strong>learn</strong> online. We operate <strong>marketplaces</strong> where hundreds of thousands of people buy and sell digital goods every day, and a network of educational blogs where millions learn <strong>creative skills</strong>.</p></div>',
+				    icon: {
+				        image: "images/icons/map-icon-red.png",
+				        iconsize: [32, 39],
+				        iconanchor: [32, 39]
+				    }
+				}
+            ],
+            doubleclickzoom: false,
+            controls: {
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: false,
+                streetViewControl: false,
+                overviewMapControl: false
+            }
+        });
+
+    </script>
+    <script type="text/javascript" src="Content/js/jquery.gmap.js"></script>
     <script type="text/javascript" src="Content/js/jquery.js"></script>
     <script type="text/javascript" src="Content/js/functions.js"></script>
     <script type="text/javascript" src="Content/js/plugins.js"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDMxJ92oBkSnVNHFX3R8XhtYQPEgk1_IiI"></script>
+    <script type="text/javascript" src="Content/js/bootstrap.min.js"></script>
 </body>
 </html>

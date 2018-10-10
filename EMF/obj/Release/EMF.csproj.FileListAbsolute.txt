@@ -66,3 +66,4 @@ C:\Users\Dogruyer_2\Documents\GitHub\emf-corporate-consulting\EMF\bin\Newtonsoft
 C:\Users\Dogruyer_2\Documents\GitHub\emf-corporate-consulting\EMF\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Dogruyer_2\Documents\GitHub\emf-corporate-consulting\EMF\obj\Release\EMF.dll
 C:\Users\Dogruyer_2\Documents\GitHub\emf-corporate-consulting\EMF\obj\Release\EMF.pdb
+C:\Users\Dogruyer_2\Documents\GitHub\emf-corporate-consulting\EMF\obj\Release\EMF.csprojResolveAssemblyReference.cache

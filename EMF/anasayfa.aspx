@@ -94,15 +94,12 @@
                                         <img src="Content/images/urun9.png" class="img-responsive" style="border-radius: 40px;"></a>
                                 </div>
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <h2 class="c-font-uppercase c-font-black c-font-bold text-center paddingtop5 margin0" style="padding-bottom: 15px; padding-top: 150px;">BİZDEN HABERLER</h2>
+        <h2 class="c-font-uppercase c-font-black c-font-bold text-center paddingtop5 margin0" style="padding-bottom: 30px; padding-top: 150px;">BİZDEN HABERLER</h2>
         <hr style="color: darkred;" />
 
         <div class="content-wrap" style="background-color: #bf272d;">
@@ -121,7 +118,7 @@
                         <asp:Repeater runat="server" DataSourceID="SqlDataSource3">
                             <ItemTemplate>
                                 <div class="col-md-4" style="color: azure;">
-                                    <div class="c-content-testimonial-3 c-option-light">
+                                    <div>
                                         <div class="c-content c-font-black">
                                             <p class="btn btn-danger" style="width: 250px; margin-top: -28px; background-color: #bf272d; border: 1px solid white; height: 60px; word-wrap: break-word; display: block;"><%# Eval("duyurular_url") %></p>
                                         </div>

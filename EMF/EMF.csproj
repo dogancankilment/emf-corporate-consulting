@@ -108,10 +108,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\all.css" />
+    <Content Include="Content\css\animate.min.css" />
+    <Content Include="Content\css\bootstrap-select.min.css" />
+    <Content Include="Content\css\flag-icon.css" />
+    <Content Include="Content\css\flag-icon.min.css" />
+    <Content Include="Content\css\site.css" />
     <Content Include="Content\images\dislilogo.jpg" />
     <Content Include="Content\images\mary.jpg" />
+    <Content Include="Content\js\bootstrap-select.min.js" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\jquery.popupoverlay.js" />
+    <Content Include="Content\js\jssor.slider-23.1.5.min.js" />
+    <Content Include="Content\js\mustache.min.js" />
+    <Content Include="Content\js\site.js" />
+    <Content Include="Content\js\theta-carousel.min.js" />
+    <Content Include="Default.aspx" />
     <Content Include="hakkimizda.aspx">
       <BrowseToURL>~/hakkimizda.aspx</BrowseToURL>
     </Content>
@@ -567,7 +579,9 @@
       <BrowseToURL>~/urunlerimiz</BrowseToURL>
     </Content>
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
@@ -582,6 +596,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="hakkimizda.aspx.cs">
       <DependentUpon>hakkimizda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
