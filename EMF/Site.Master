@@ -118,13 +118,18 @@
                                     </li>
                                 </ul>
                             </div>
+                             <div class="container">
                              <div class="form-group ustdil margintop-10 marginleft10 pull-right">
                                 <asp:DropDownList runat="server" ID="drpDil" CssClass="selectpicker" data-width="fit" AutoPostBack="true" OnSelectedIndexChanged="drpDil_SelectedIndexChanged" OnPreRender="drpDil_PreRender">
                                     <asp:ListItem Value="tr-TR" data-content='<span class="flag-icon flag-icon-tr"></span>'></asp:ListItem>
                                     <asp:ListItem Value="en-US" data-content='<span class="flag-icon flag-icon-gb"></span>'></asp:ListItem>
+                                     <asp:ListItem Value="en-US" data-content='<span class="flag-icon flag-icon-gb"></span>'></asp:ListItem>
+                                     <asp:ListItem Value="en-US" data-content='<span class="flag-icon flag-icon-gb"></span>'></asp:ListItem>
+                                     <asp:ListItem Value="en-US" data-content='<span class="flag-icon flag-icon-gb"></span>'></asp:ListItem>
+                                     <asp:ListItem Value="en-US" data-content='<span class="flag-icon flag-icon-gb"></span>'></asp:ListItem>
                                 </asp:DropDownList>
                             </div>
-                            <div class="container">
+                           
                                 <br />
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-10 col-lg-8">
@@ -221,7 +226,7 @@
                             Copyrights &copy; 2018 All Rights Reserved by Dogruyer<br>
                         </div>
                         <div class="copyrights-menu copyright-links col-md-6" style="color: white">
-                            <a href="anasayfa.aspx">Anasayfa</a>/<a href="hakkımızda.aspx">Hakkımızda</a>/<a href="Urunlerimiz.aspx">Ürünlerimiz</a>/<a href="bayilerimiz.aspx">Bayilerimiz</a>/<a href="galeri.aspx">Galeri</a>/<a href="Iletisim.aspx">İletişim</a>
+                            <a href="anasayfa.aspx">Anasayfa</a>/<a href="hakkimizda.aspx">Hakkımızda</a>/<a href="Urunlerimiz.aspx">Ürünlerimiz</a>/<a href="bayilerimiz.aspx">Bayilerimiz</a>/<a href="galeri.aspx">Galeri</a>/<a href="Iletisim.aspx">İletişim</a>
                         </div>
                         <div class="col-md-2">
                             <div class="widget noborder notoppadding">
