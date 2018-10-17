@@ -49,7 +49,7 @@
 
                 <!-- Shop
 					============================================= -->
-                <div id="shop" class="shop grid-container clearfix">
+                <div id="shop" class="shop clearfix">
                     <div class="row center pf-dress">
                         <div class="product clearfix">
                             <div class="product-desc">
